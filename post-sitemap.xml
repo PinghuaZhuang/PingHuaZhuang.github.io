@@ -7,6 +7,62 @@
     </url>
 
     <url>
+        <loc>http://www.pinghuazhuang.com/2016/03/04/software/browser-sync/</loc>
+        <lastmod>2017-09-04T08:04:58.508Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://www.pinghuazhuang.com/2016/08/31/js-code/1-400%E4%BA%BF%E4%B8%AD%E6%95%B0%E5%AD%971%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/</loc>
+        <lastmod>2017-09-03T10:52:59.609Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://www.pinghuazhuang.com/2016/05/30/debug/%E6%8F%92%E4%BB%B6%E5%86%B2%E7%AA%81%E5%8F%8A%E8%B8%A9%E5%9D%91/</loc>
+        <lastmod>2017-09-03T10:39:32.584Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://www.pinghuazhuang.com/2016/09/03/js-code/%E8%87%AA%E5%AE%9A%E4%BA%8B%E4%BB%B6/</loc>
+        <lastmod>2017-09-03T08:50:20.431Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://www.pinghuazhuang.com/2016/05/30/debug/debug/</loc>
+        <lastmod>2017-09-03T08:38:40.945Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://www.pinghuazhuang.com/2017/05/05/note/Angular-route/</loc>
+        <lastmod>2017-09-03T08:14:24.345Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://www.pinghuazhuang.com/2017/04/28/note/AngularJS/</loc>
+        <lastmod>2017-09-03T08:13:45.012Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://www.pinghuazhuang.com/2015/11/11/HTML/HTML%E5%B8%B8%E8%A7%81%E5%B8%83%E5%B1%80/</loc>
         <lastmod>2017-09-02T18:12:18.034Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -16,7 +72,7 @@
 
     <url>
         <loc>http://www.pinghuazhuang.com/2017/04/01/jQuery-code/%E5%88%A4%E6%96%AD%E7%B1%BB%E5%9E%8B-%E5%AF%B9%E8%B1%A1/</loc>
-        <lastmod>2017-09-02T18:06:16.779Z</lastmod>
+        <lastmod>2017-09-02T18:06:16.778Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -24,7 +80,7 @@
 
     <url>
         <loc>http://www.pinghuazhuang.com/2017/03/06/jQuery-code/jQuery-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/</loc>
-        <lastmod>2017-09-02T17:57:00.132Z</lastmod>
+        <lastmod>2017-09-02T17:57:00.131Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -41,14 +97,6 @@
     <url>
         <loc>http://www.pinghuazhuang.com/2016/06/01/debug/%E4%B8%80%E4%BA%9B%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</loc>
         <lastmod>2017-09-02T17:53:34.520Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://www.pinghuazhuang.com/2016/05/30/debug/debug/</loc>
-        <lastmod>2017-09-02T17:53:02.936Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -95,30 +143,6 @@
     </url>
 
     <url>
-        <loc>http://www.pinghuazhuang.com/2016/08/31/js-code/1-400%E4%BA%BF%E4%B8%AD%E6%95%B0%E5%AD%971%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/</loc>
-        <lastmod>2017-09-02T17:43:37.638Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://www.pinghuazhuang.com/2017/05/05/note/Angular-route/</loc>
-        <lastmod>2017-09-02T17:41:38.888Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://www.pinghuazhuang.com/2017/04/28/note/AngularJS/</loc>
-        <lastmod>2017-09-02T17:41:07.265Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://www.pinghuazhuang.com/2017/02/11/note/bxg-com/</loc>
         <lastmod>2017-09-02T17:37:15.236Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -127,8 +151,16 @@
     </url>
 
     <url>
+        <loc>http://www.pinghuazhuang.com/2017/02/11/note/xxx-com/</loc>
+        <lastmod>2017-09-02T17:37:15.236Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://www.pinghuazhuang.com/2016/02/25/software/npm-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</loc>
-        <lastmod>2017-09-02T17:25:46.362Z</lastmod>
+        <lastmod>2017-09-02T17:25:46.361Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
