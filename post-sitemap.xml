@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>http://www.pinghuazhuang.com/2017/03/06/jQuery-code/jQuery-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/</loc>
+        <lastmod>2017-09-07T14:14:04.364Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://www.pinghuazhuang.com/2016/01/07/network/http%E6%8A%A5%E6%96%87/</loc>
+        <lastmod>2017-09-05T06:10:22.522Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://www.pinghuazhuang.com/2016/03/04/software/browser-sync/</loc>
         <lastmod>2017-09-04T08:04:58.508Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -73,14 +89,6 @@
     <url>
         <loc>http://www.pinghuazhuang.com/2017/04/01/jQuery-code/%E5%88%A4%E6%96%AD%E7%B1%BB%E5%9E%8B-%E5%AF%B9%E8%B1%A1/</loc>
         <lastmod>2017-09-02T18:06:16.778Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://www.pinghuazhuang.com/2017/03/06/jQuery-code/jQuery-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/</loc>
-        <lastmod>2017-09-02T17:57:00.131Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

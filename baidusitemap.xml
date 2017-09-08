@@ -4,6 +4,50 @@
 
     
   <url>
+    <loc>http://www.pinghuazhuang.com/2017/03/06/jQuery-code/jQuery-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/</loc>
+    <lastmod>2017-09-07T14:14:04.364Z</lastmod>
+    <data>
+        <display>
+        <title>jQuery-整体架构</title>
+        <pubTime>2017-03-06T05:19:18.000Z</pubTime>
+        
+        <tag>code</tag>
+         
+        <tag>jQuery</tag>
+         
+         
+           
+             
+              <breadCrumb title="code-analyse" url="http://www.pinghuazhuang.com/categories/code-analyse/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2016/01/07/network/http%E6%8A%A5%E6%96%87/</loc>
+    <lastmod>2017-09-05T06:10:22.522Z</lastmod>
+    <data>
+        <display>
+        <title>http报文</title>
+        <pubTime>2016-01-07T06:07:59.000Z</pubTime>
+        
+        <tag>notwork</tag>
+         
+        <tag>note</tag>
+         
+         
+           
+             
+              <breadCrumb title="other" url="http://www.pinghuazhuang.com/categories/other/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.pinghuazhuang.com/2016/03/04/software/browser-sync/</loc>
     <lastmod>2017-09-04T08:04:58.508Z</lastmod>
     <data>
@@ -119,9 +163,9 @@
         <title>Angular-route</title>
         <pubTime>2017-05-04T17:39:51.000Z</pubTime>
         
-        <tag>AngularJS</tag>
-         
         <tag>note</tag>
+         
+        <tag>AngularJS</tag>
          
          
            
@@ -141,9 +185,9 @@
         <title>AngularJS</title>
         <pubTime>2017-04-28T05:14:02.000Z</pubTime>
         
-        <tag>AngularJS</tag>
-         
         <tag>note</tag>
+         
+        <tag>AngularJS</tag>
          
          
            
@@ -198,28 +242,6 @@
 
     
   <url>
-    <loc>http://www.pinghuazhuang.com/2017/03/06/jQuery-code/jQuery-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/</loc>
-    <lastmod>2017-09-02T17:57:00.131Z</lastmod>
-    <data>
-        <display>
-        <title>jQuery-整体架构</title>
-        <pubTime>2017-03-06T05:19:18.000Z</pubTime>
-        
-        <tag>code</tag>
-         
-        <tag>jQuery</tag>
-         
-         
-           
-             
-              <breadCrumb title="code-analyse" url="http://www.pinghuazhuang.com/categories/code-analyse/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.pinghuazhuang.com/2017/02/25/C3H5/animate-css/</loc>
     <lastmod>2017-09-02T17:55:55.785Z</lastmod>
     <data>
@@ -227,9 +249,9 @@
         <title>animate.css</title>
         <pubTime>2017-02-25T14:31:50.000Z</pubTime>
         
-        <tag>CSS</tag>
-         
         <tag>C3H5</tag>
+         
+        <tag>CSS</tag>
          
          
            
@@ -293,9 +315,9 @@
         <title>grid布局</title>
         <pubTime>2017-07-21T14:27:55.000Z</pubTime>
         
-        <tag>C3H5</tag>
-         
         <tag>HTML</tag>
+         
+        <tag>C3H5</tag>
          
          
            

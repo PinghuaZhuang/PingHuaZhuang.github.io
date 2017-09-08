@@ -14,13 +14,6 @@
     </url>
 
     <url>
-        <loc>http://www.pinghuazhuang.com/categories/code-analyse/</loc>
-        <lastmod>2017-09-02T18:06:16.778Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://www.pinghuazhuang.com/categories/html/</loc>
         <lastmod>2017-09-02T18:12:18.034Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -42,13 +35,6 @@
     </url>
 
     <url>
-        <loc>http://www.pinghuazhuang.com/categories/other/</loc>
-        <lastmod>2017-09-03T10:39:32.584Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://www.pinghuazhuang.com/categories/code/</loc>
         <lastmod>2017-09-03T10:52:59.609Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -58,6 +44,20 @@
     <url>
         <loc>http://www.pinghuazhuang.com/categories/software/</loc>
         <lastmod>2017-09-04T08:04:58.508Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://www.pinghuazhuang.com/categories/other/</loc>
+        <lastmod>2017-09-05T06:10:22.522Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://www.pinghuazhuang.com/categories/code-analyse/</loc>
+        <lastmod>2017-09-07T14:14:04.364Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
