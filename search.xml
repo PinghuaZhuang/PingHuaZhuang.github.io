@@ -3,28 +3,6 @@
   
     
     <entry>
-      <title><![CDATA[grid布局]]></title>
-      <url>/2017/07/21/HTML/grid%E5%B8%83%E5%B1%80/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> HTML </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> C3H5 </tag>
-            
-            <tag> HTML </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[Angular-route]]></title>
       <url>/2017/05/05/note/Angular-route/</url>
       <content type="html"><![CDATA[<h1 id="SPA"><a href="#SPA" class="headerlink" title="SPA"></a>SPA</h1><blockquote><p>single page application: 单页面应用</p></blockquote><h1 id="锚链接实现原理"><a href="#锚链接实现原理" class="headerlink" title="锚链接实现原理"></a>锚链接实现原理</h1><p>利用 window.onhashchange 来监听锚点值的变化, 从而发送 ajax 来请求模板数据, 加载的页面中<br>由于是单页面应用, 所有这里的 $http 默认没有设置请求数据个数</p><h1 id="route"><a href="#route" class="headerlink" title="route"></a>route</h1><ul><li><h2 id="when-otherwise"><a href="#when-otherwise" class="headerlink" title="when().otherwise()"></a><code>when().otherwise()</code></h2><ul><li>这是 <code>$routeProvider</code> 提供的方法</li><li>匹配路由 | 其他情况</li><li>匹配规则:<blockquote><p><code>#!/list</code> <code>#!/list:name</code></p></blockquote></li><li>*传递参数<ul><li><code>#!/list?name=jack</code><blockquote><p>参数直接拼接在后面</p></blockquote></li><li><code>#!/list:name</code><blockquote><p>必须有参数, 但是参数可以为任意</p></blockquote></li><li><code>#!/list:name?</code> *<blockquote><p>可以有参数, 也可以没有参数</p></blockquote></li></ul></li><li><code>!</code> 的作用<blockquote><p>google 做了 <code>SEO</code> 优化, 在碰到 <code>#!</code> 网路爬虫会进入搜索</p></blockquote></li></ul></li><li><h2 id="templateUrl"><a href="#templateUrl" class="headerlink" title="templateUrl"></a><code>templateUrl</code></h2><blockquote><p>模板路径, 相比于 <code>template</code> 使用次数多的多</p></blockquote></li><li><h2 id="routeProvider"><a href="#routeProvider" class="headerlink" title="routeProvider"></a><code>routeProvider</code></h2><blockquote><p>对应的 <code>provider</code> 方法, 可以用来修改 <code>!</code></p></blockquote></li><li><h2 id="redirecto"><a href="#redirecto" class="headerlink" title="redirecto"></a><code>redirecto</code></h2><blockquote><p>跳转路由</p></blockquote></li><li><h2 id="controller"><a href="#controller" class="headerlink" title="controller"></a><code>controller</code></h2><blockquote><p>参数, 配置控制器</p></blockquote></li><li><h2 id="locationProvider"><a href="#locationProvider" class="headerlink" title="$locationProvider"></a><code>$locationProvider</code></h2><blockquote><p><code>$locationProvider.hashPrefix(&quot;@&quot;);</code> 可以替换或者干掉 <code>!</code></p></blockquote></li></ul><h1 id="路由的匹配"><a href="#路由的匹配" class="headerlink" title="路由的匹配 *"></a>路由的匹配 *</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 可以匹配到的路由</span></div><div class="line"><span class="comment">//                   #/search?q=rose movieType=search page=undefined</span></div><div class="line"><span class="comment">//                   #/in_theaters/3</span></div><div class="line">$routeProvider.when(<span class="string">"/:movieType/:page?"</span>, &#123;</div><div class="line">    templateUrl: <span class="string">"./movie_list/movie_list.html"</span>,</div><div class="line">    controller: <span class="string">"movie_listCtrl"</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure><h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><ul><li><h2 id="只是-URL-的锚点值变化是不会触发-ajax-请求的"><a href="#只是-URL-的锚点值变化是不会触发-ajax-请求的" class="headerlink" title="只是 URL 的锚点值变化是不会触发 ajax 请求的"></a>只是 <code>URL</code> 的锚点值变化是不会触发 <code>ajax</code> 请求的</h2></li></ul>]]></content>
@@ -38,9 +16,9 @@
         
         <tags>
             
-            <tag> AngularJS </tag>
-            
             <tag> note </tag>
+            
+            <tag> AngularJS </tag>
             
         </tags>
         
@@ -60,31 +38,9 @@
         
         <tags>
             
-            <tag> AngularJS </tag>
-            
             <tag> note </tag>
             
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[判断类型和对象]]></title>
-      <url>/2017/04/01/jQuery-code/%E5%88%A4%E6%96%AD%E7%B1%BB%E5%9E%8B-%E5%AF%B9%E8%B1%A1/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> code-analyse </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> code </tag>
-            
-            <tag> jQuery </tag>
+            <tag> AngularJS </tag>
             
         </tags>
         
@@ -107,57 +63,6 @@
             <tag> code </tag>
             
             <tag> jQuery </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[animate.css]]></title>
-      <url>/2017/02/25/C3H5/animate-css/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> HTML </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> CSS </tag>
-            
-            <tag> C3H5 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[xxx.com]]></title>
-      <url>/2017/02/11/note/bxg-com/</url>
-      <content type="html"><![CDATA[<h2 id="项目目录树"><a href="#项目目录树" class="headerlink" title="项目目录树"></a>项目目录树</h2><p>├─.vscode<br>├─assets<br>│ ├─bootstrap<br>│ │ ├─css<br>│ │ ├─fonts<br>│ │ └─js<br>│ │ └─locales<br>│ ├─ueditor<br>│ │ ├─dialogs<br>│ │ │ ├─anchor<br>│ │ │ ├─attachment<br>│ │ │ │ ├─fileTypeImages<br>│ │ │ │ └─images<br>│ │ │ ├─background<br>│ │ │ │ └─images<br>│ │ │ ├─charts<br>│ │ │ │ └─images<br>│ │ │ ├─emotion<br>│ │ │ │ └─images<br>│ │ │ ├─gmap<br>│ │ │ ├─help<br>│ │ │ ├─image<br>│ │ │ │ └─images<br>│ │ │ ├─insertframe<br>│ │ │ ├─link<br>│ │ │ ├─map<br>│ │ │ ├─music<br>│ │ │ ├─preview<br>│ │ │ ├─scrawl<br>│ │ │ │ └─images<br>│ │ │ ├─searchreplace<br>│ │ │ ├─snapscreen<br>│ │ │ ├─spechars<br>│ │ │ ├─table<br>│ │ │ ├─template<br>│ │ │ │ └─images<br>│ │ │ ├─video<br>│ │ │ │ └─images<br>│ │ │ ├─webapp<br>│ │ │ └─wordimage<br>│ │ ├─lang<br>│ │ │ ├─en<br>│ │ │ │ └─images<br>│ │ │ └─zh-cn<br>│ │ │ └─images<br>│ │ ├─php<br>│ │ ├─themes<br>│ │ │ └─default<br>│ │ │ ├─css<br>│ │ │ └─images<br>│ │ └─third-party<br>│ │ ├─codemirror<br>│ │ ├─highcharts<br>│ │ │ ├─adapters<br>│ │ │ ├─modules<br>│ │ │ └─themes<br>│ │ ├─snapscreen<br>│ │ ├─SyntaxHighlighter<br>│ │ ├─video-js<br>│ │ │ └─font<br>│ │ ├─webuploader<br>│ │ └─zeroclipboard<br>│ └─uploadify<br>│ └─__MACOSX<br>├─css<br>├─demo<br>├─imgs<br>├─js<br>│ ├─common<br>│ ├─course<br>│ ├─lib<br>│ ├─manage<br>│ └─teacher<br>└─tpls</p><h2 id="api-接口"><a href="#api-接口" class="headerlink" title="api 接口"></a>api 接口</h2><h2 id="模块划分"><a href="#模块划分" class="headerlink" title="模块划分"></a>模块划分</h2><ul><li><h3 id="讲师信息"><a href="#讲师信息" class="headerlink" title="讲师信息"></a>讲师信息</h3></li><li><h3 id="课程管理"><a href="#课程管理" class="headerlink" title="课程管理"></a>课程管理</h3></li><li><h3 id="课时管理"><a href="#课时管理" class="headerlink" title="课时管理"></a>课时管理</h3></li><li><h3 id="数据统计"><a href="#数据统计" class="headerlink" title="数据统计"></a>数据统计</h3></li></ul><blockquote><p>每个模块都大致包含了</p><pre><code>1. 添加
-2. 删除
-3. 修改
-</code></pre><p>还有登录, 退出, 各种中心等</p></blockquote><h2 id="index-html-使用到的组件插件"><a href="#index-html-使用到的组件插件" class="headerlink" title="index.html 使用到的组件插件"></a>index.html 使用到的组件插件</h2><ul><li><h3 id="列表组件"><a href="#列表组件" class="headerlink" title="列表组件"></a>列表组件</h3></li><li><h3 id="面板组件"><a href="#面板组件" class="headerlink" title="面板组件"></a>面板组件</h3></li><li><h3 id="字体图标"><a href="#字体图标" class="headerlink" title="字体图标"></a>字体图标</h3></li><li><h3 id="模态框"><a href="#模态框" class="headerlink" title="模态框"></a>模态框</h3></li><li><h3 id="boostrap-datetimepicker-插件"><a href="#boostrap-datetimepicker-插件" class="headerlink" title="boostrap-datetimepicker 插件"></a><code>boostrap-datetimepicker</code> 插件</h3></li><li><h3 id="没有登录就跳转到登录页面"><a href="#没有登录就跳转到登录页面" class="headerlink" title="没有登录就跳转到登录页面"></a>没有登录就跳转到登录页面</h3></li></ul><h2 id="编辑讲师"><a href="#编辑讲师" class="headerlink" title="编辑讲师"></a>编辑讲师</h2><ul><li>如果不暴露数据, 就使用闭包和数据绑定.</li></ul><h2 id="复习知识"><a href="#复习知识" class="headerlink" title="复习知识"></a>复习知识</h2><ul><li><p>事件3要素: 事件源/事件类型/触发事件的对象</p></li><li><p>词法作用域 === 静态作用域</p><h3><a href="#" class="headerlink" title="=========="></a>==========</h3></li></ul><ul><li><h3 id="success-事件-e-code-对应的是-onreadload-里面的-e-status"><a href="#success-事件-e-code-对应的是-onreadload-里面的-e-status" class="headerlink" title="success 事件 e.code 对应的是 onreadload 里面的 e.status"></a>success 事件 <code>e.code</code> 对应的是 <code>onreadload</code> 里面的 <code>e.status</code></h3></li><li><h3 id="AMD-规范-CMD-规范"><a href="#AMD-规范-CMD-规范" class="headerlink" title="AMD 规范 CMD 规范"></a>AMD 规范 CMD 规范</h3><ul><li>AMD 异步,<code>requireJS</code></li><li>CMD 同步, <code>seaJS</code>(作者已经放弃了)</li></ul></li><li><h3 id="本地跳转-验证成功"><a href="#本地跳转-验证成功" class="headerlink" title="本地跳转(验证成功)"></a>本地跳转(验证成功)</h3><ul><li><h3 id="登录状态-503-501-没有联网-401-未授权"><a href="#登录状态-503-501-没有联网-401-未授权" class="headerlink" title="登录状态: 503 501 没有联网 401 未授权"></a>登录状态: 503 501 没有联网 401 未授权</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">location.href = <span class="string">"index.html"</span>;</div><div class="line">location.href = <span class="string">""</span>;</div></pre></td></tr></table></figure></li></ul></li><li><h3 id="阻止默认行为的一些方法"><a href="#阻止默认行为的一些方法" class="headerlink" title="阻止默认行为的一些方法"></a>阻止默认行为的一些方法</h3><ul><li><code>e.pre...()</code></li><li><code>return false</code></li></ul></li><li><h3 id="jQuery-trigger-方法"><a href="#jQuery-trigger-方法" class="headerlink" title="jQuery trigger() 方法"></a><code>jQuery trigger()</code> 方法</h3><ul><li>触发事件</li><li>传递参数 <code>trigger(&quot;click&quot;, [&quot;xxxx&quot;]);</code><blockquote><p>在绑定的函数里面可以使用这个参数</p></blockquote></li></ul></li><li><h3 id="toggle-切换点击时候绑定的事件"><a href="#toggle-切换点击时候绑定的事件" class="headerlink" title="toggle() 切换点击时候绑定的事件"></a><code>toggle()</code> 切换点击时候绑定的事件</h3><ul><li><code>toggle(fn1, fn2, fn3)</code> 可以多个</li></ul></li><li><h3 id="text-js"><a href="#text-js" class="headerlink" title="text.js"></a><code>text.js</code></h3><ul><li><code>difine([&quot;text!tpls/teaxherListhtml.html&quot;], function () {});</code><ul><li>text.js 插件的规则</li><li>tpls 会照我们配置的信息来替换掉</li></ul></li><li>从第一个<code>{ }</code>开始就不能使用注释, 因为使用的是正则来搜索, 所以不能添加无用的代码, 也是会被搜索到的</li></ul></li><li><h3 id="template-js-支持AMD规范"><a href="#template-js-支持AMD规范" class="headerlink" title="template.js(支持AMD规范)"></a><code>template.js</code>(支持AMD规范)</h3><ul><li><code>template(&quot;script的id&quot;, 数据);</code><ul><li>模板必须要在页面中!</li></ul></li><li><code>template.render(&quot;模板字符串&quot;, 数据);</code><ul><li>异步加载, 性能会比较好</li></ul></li><li><code>template(&quot;模板路径&quot;, 数据);</code></li><li>{each result} {each} {$value.xxx} {@$value.xxx}<ul><li>对传递进来的数据里面的result属性值遍历</li></ul></li><li>{$index} 索引值</li></ul></li><li><h3 id="bootstrap"><a href="#bootstrap" class="headerlink" title="bootstrap"></a><code>bootstrap</code></h3><ul><li>路径导航就是面包屑</li></ul></li><li><h3 id="跨页面的数据传递"><a href="#跨页面的数据传递" class="headerlink" title="跨页面的数据传递"></a>跨页面的数据传递</h3><ul><li><code>localStorage</code><ul><li>只用用户没理由删除, 数据可以永久保存</li><li><code>setItem(); getItem();</code></li><li>只能保存字符串数据, 如果不是, 会被装换成字符串, 调用 <code>toString();</code></li><li>大小 50M</li></ul></li><li><code>sessionStorage</code><ul><li>当关闭浏览器的时候就会删除</li></ul></li><li>其他的一些方法<ul><li><code>clear():</code> 清空数据</li><li><code>key():</code> 获取键名?</li><li><code>remove():</code> 根据键名删除</li></ul></li><li><code>cookie</code><ul><li>大小只有 4k 左右</li><li>一般用来验证用户信息<br><img src="./cookie-loaclStorage-sessionStrorage.png" alt="三者的区别"></li></ul></li></ul></li><li><p><code>sesstion, local</code> 中保存的数据都是可以嵌套对象, 并且不能有函数, 直接回被过滤掉 (服务器的技术)</p></li><li><p><code>cookie</code> 王牌 <code>document.cookie = &quot;id=666&quot;;</code></p><ul><li>可以在前端读写, 也可以在后台读写</li><li>回话 <code>cookie</code></li><li>持久 <code>cookie</code><ul><li><code>document.cookie = &quot;id = 999; expires = &quot; + new Date(&quot;2017-08-20 00:00:00&quot;);</code> 差了8个小时</li></ul></li><li>不能跨域</li><li>不要保存安全性较高的数据, 比如密码</li><li>大概只有 4k 左右的容量</li></ul></li><li><p><code>jQuery.cookie</code> 插件</p><ul><li><code>$.cookei(&quot;name&quot;, &quot;xxx&quot;, { expires: .5 })</code> 这是的时间是一天为单位<ul><li><code>expires</code> 可以是数字类型, 也可以是 <code>Date</code> 对象</li><li>一个参数是获取, 两个是设置值</li><li><code>$.removeCookie()</code> 传入键来删除</li></ul></li></ul></li><li><p>隐藏域</p><ul><li><code>input type=&quot;hidden&quot;</code></li></ul></li><li><p>严格模式中</p><ul><li>不能使用 <code>callee caller</code></li><li>call 不能传递(慎用)</li></ul></li><li><p><code>callback &amp;&amp; callback()</code></p></li><li><p><code>&quot;post get&quot;.split(&quot; &quot;).forEach()</code></p></li><li><p><code>boostrap</code> 中是 <code>modal(&quot;hide&quot;)</code> 即隐藏, 也删除了</p></li><li><p>多些一些伪代码, 更好的阅读性!!!</p></li><li><p>联动下拉框 城市二级联动 的实现原理</p></li><li><p>插件利器</p><ul><li><code>uploadify</code>：上传插件 <code>http://www.uploadify.com/documentation/</code></li><li><code>ueditor</code>: 富文本编辑器 <code>http://ueditor.baidu.com/website/</code><blockquote><p>有一个 zIndex 的 bug</p></blockquote></li><li><code>ckeditor</code> : en</li><li><code>echarts</code>；<code>canvas</code>做出来图表软件 <code>http://echarts.baidu.com/</code></li></ul></li><li><p>BOM 常用操作</p><ul><li>属新当前页面<blockquote><p><code>location.reload();</code></p></blockquote></li><li>网站前进后退<blockquote><p><code>location.go(-1 || 1)</code></p></blockquote></li></ul></li></ul><h2 id="UEidtor"><a href="#UEidtor" class="headerlink" title="UEidtor"></a>UEidtor</h2><ul><li>常见的富文本编辑器<ul><li>ueditor</li><li>ckeditor</li></ul></li></ul><ul><li>使用ueditor<ul><li>导入ueditor.config.js</li><li>导入ueditor.all.js</li></ul></li></ul><ul><li><p>项目中使用</p><ul><li><p>在ueditor.config.js中修改ueditor文件夹路径：window.UEDITOR_HOME_URL = “/assets/ueditor/“;</p></li><li><p>在ueditor.config.js中修改zIndex属性，超过模态框的zindex(&gt;1050)</p></li><li><p>配置ueditor.config.js/ueditor.all.js的路径</p></li><li><p>通过shim解决2个js文件的依赖</p></li><li><p>在需要渲染编辑器的模块，导入指定的js</p></li><li><p>在需要渲染编辑器的页面模板中，添加一段代码</p><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"ueContainer"</span> <span class="attr">name</span>=<span class="string">"tc_introduce"</span> <span class="attr">type</span>=<span class="string">"text/plain"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure><p>​</p></li><li><p>当页面已经加载完毕之后，初始化编辑器：var ue=UE.getEditor(‘ueContainer’);</p></li><li><p>当编辑器初始化完毕后，加载原来的自我介绍</p><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ue.ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    ue.setContent(res.result.tc_introduce);</div><div class="line">&#125;)</div></pre></td></tr></table></figure></li></ul></li></ul>]]></content>
-      
-        <categories>
-            
-            <category> note </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> jQuery </tag>
-            
-            <tag> RequireJs </tag>
-            
-            <tag> Boostrap </tag>
-            
-            <tag> plugin </tag>
             
         </tags>
         
@@ -193,66 +98,29 @@
     </entry>
     
     <entry>
-      <title><![CDATA[JS一些怪异行为]]></title>
-      <url>/2017/01/10/js-code/JS%E4%B8%80%E4%BA%9B%E6%80%AA%E5%BC%82%E8%A1%8C%E4%B8%BA/</url>
-      <content type="html"></content>
+      <title><![CDATA[xxx.com]]></title>
+      <url>/2017/02/11/note/bxg-com/</url>
+      <content type="html"><![CDATA[<h2 id="项目目录树"><a href="#项目目录树" class="headerlink" title="项目目录树"></a>项目目录树</h2><p>├─.vscode<br>├─assets<br>│ ├─bootstrap<br>│ │ ├─css<br>│ │ ├─fonts<br>│ │ └─js<br>│ │ └─locales<br>│ ├─ueditor<br>│ │ ├─dialogs<br>│ │ │ ├─anchor<br>│ │ │ ├─attachment<br>│ │ │ │ ├─fileTypeImages<br>│ │ │ │ └─images<br>│ │ │ ├─background<br>│ │ │ │ └─images<br>│ │ │ ├─charts<br>│ │ │ │ └─images<br>│ │ │ ├─emotion<br>│ │ │ │ └─images<br>│ │ │ ├─gmap<br>│ │ │ ├─help<br>│ │ │ ├─image<br>│ │ │ │ └─images<br>│ │ │ ├─insertframe<br>│ │ │ ├─link<br>│ │ │ ├─map<br>│ │ │ ├─music<br>│ │ │ ├─preview<br>│ │ │ ├─scrawl<br>│ │ │ │ └─images<br>│ │ │ ├─searchreplace<br>│ │ │ ├─snapscreen<br>│ │ │ ├─spechars<br>│ │ │ ├─table<br>│ │ │ ├─template<br>│ │ │ │ └─images<br>│ │ │ ├─video<br>│ │ │ │ └─images<br>│ │ │ ├─webapp<br>│ │ │ └─wordimage<br>│ │ ├─lang<br>│ │ │ ├─en<br>│ │ │ │ └─images<br>│ │ │ └─zh-cn<br>│ │ │ └─images<br>│ │ ├─php<br>│ │ ├─themes<br>│ │ │ └─default<br>│ │ │ ├─css<br>│ │ │ └─images<br>│ │ └─third-party<br>│ │ ├─codemirror<br>│ │ ├─highcharts<br>│ │ │ ├─adapters<br>│ │ │ ├─modules<br>│ │ │ └─themes<br>│ │ ├─snapscreen<br>│ │ ├─SyntaxHighlighter<br>│ │ ├─video-js<br>│ │ │ └─font<br>│ │ ├─webuploader<br>│ │ └─zeroclipboard<br>│ └─uploadify<br>│ └─__MACOSX<br>├─css<br>├─demo<br>├─imgs<br>├─js<br>│ ├─common<br>│ ├─course<br>│ ├─lib<br>│ ├─manage<br>│ └─teacher<br>└─tpls</p><h2 id="api-接口"><a href="#api-接口" class="headerlink" title="api 接口"></a>api 接口</h2><h2 id="模块划分"><a href="#模块划分" class="headerlink" title="模块划分"></a>模块划分</h2><ul><li><h3 id="讲师信息"><a href="#讲师信息" class="headerlink" title="讲师信息"></a>讲师信息</h3></li><li><h3 id="课程管理"><a href="#课程管理" class="headerlink" title="课程管理"></a>课程管理</h3></li><li><h3 id="课时管理"><a href="#课时管理" class="headerlink" title="课时管理"></a>课时管理</h3></li><li><h3 id="数据统计"><a href="#数据统计" class="headerlink" title="数据统计"></a>数据统计</h3></li></ul><blockquote><p>每个模块都大致包含了</p><pre><code>1. 添加
+2. 删除
+3. 修改
+</code></pre><p>还有登录, 退出, 各种中心等</p></blockquote><h2 id="index-html-使用到的组件插件"><a href="#index-html-使用到的组件插件" class="headerlink" title="index.html 使用到的组件插件"></a>index.html 使用到的组件插件</h2><ul><li><h3 id="列表组件"><a href="#列表组件" class="headerlink" title="列表组件"></a>列表组件</h3></li><li><h3 id="面板组件"><a href="#面板组件" class="headerlink" title="面板组件"></a>面板组件</h3></li><li><h3 id="字体图标"><a href="#字体图标" class="headerlink" title="字体图标"></a>字体图标</h3></li><li><h3 id="模态框"><a href="#模态框" class="headerlink" title="模态框"></a>模态框</h3></li><li><h3 id="boostrap-datetimepicker-插件"><a href="#boostrap-datetimepicker-插件" class="headerlink" title="boostrap-datetimepicker 插件"></a><code>boostrap-datetimepicker</code> 插件</h3></li><li><h3 id="没有登录就跳转到登录页面"><a href="#没有登录就跳转到登录页面" class="headerlink" title="没有登录就跳转到登录页面"></a>没有登录就跳转到登录页面</h3></li></ul><h2 id="编辑讲师"><a href="#编辑讲师" class="headerlink" title="编辑讲师"></a>编辑讲师</h2><ul><li>如果不暴露数据, 就使用闭包和数据绑定.</li></ul><h2 id="复习知识"><a href="#复习知识" class="headerlink" title="复习知识"></a>复习知识</h2><ul><li><p>事件3要素: 事件源/事件类型/触发事件的对象</p></li><li><p>词法作用域 === 静态作用域</p><h3><a href="#" class="headerlink" title="=========="></a>==========</h3></li></ul><ul><li><h3 id="success-事件-e-code-对应的是-onreadload-里面的-e-status"><a href="#success-事件-e-code-对应的是-onreadload-里面的-e-status" class="headerlink" title="success 事件 e.code 对应的是 onreadload 里面的 e.status"></a>success 事件 <code>e.code</code> 对应的是 <code>onreadload</code> 里面的 <code>e.status</code></h3></li><li><h3 id="AMD-规范-CMD-规范"><a href="#AMD-规范-CMD-规范" class="headerlink" title="AMD 规范 CMD 规范"></a>AMD 规范 CMD 规范</h3><ul><li>AMD 异步,<code>requireJS</code></li><li>CMD 同步, <code>seaJS</code>(作者已经放弃了)</li></ul></li><li><h3 id="本地跳转-验证成功"><a href="#本地跳转-验证成功" class="headerlink" title="本地跳转(验证成功)"></a>本地跳转(验证成功)</h3><ul><li><h3 id="登录状态-503-501-没有联网-401-未授权"><a href="#登录状态-503-501-没有联网-401-未授权" class="headerlink" title="登录状态: 503 501 没有联网 401 未授权"></a>登录状态: 503 501 没有联网 401 未授权</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">location.href = <span class="string">"index.html"</span>;</div><div class="line">location.href = <span class="string">""</span>;</div></pre></td></tr></table></figure></li></ul></li><li><h3 id="阻止默认行为的一些方法"><a href="#阻止默认行为的一些方法" class="headerlink" title="阻止默认行为的一些方法"></a>阻止默认行为的一些方法</h3><ul><li><code>e.pre...()</code></li><li><code>return false</code></li></ul></li><li><h3 id="jQuery-trigger-方法"><a href="#jQuery-trigger-方法" class="headerlink" title="jQuery trigger() 方法"></a><code>jQuery trigger()</code> 方法</h3><ul><li>触发事件</li><li>传递参数 <code>trigger(&quot;click&quot;, [&quot;xxxx&quot;]);</code><blockquote><p>在绑定的函数里面可以使用这个参数</p></blockquote></li></ul></li><li><h3 id="toggle-切换点击时候绑定的事件"><a href="#toggle-切换点击时候绑定的事件" class="headerlink" title="toggle() 切换点击时候绑定的事件"></a><code>toggle()</code> 切换点击时候绑定的事件</h3><ul><li><code>toggle(fn1, fn2, fn3)</code> 可以多个</li></ul></li><li><h3 id="text-js"><a href="#text-js" class="headerlink" title="text.js"></a><code>text.js</code></h3><ul><li><code>difine([&quot;text!tpls/teaxherListhtml.html&quot;], function () {});</code><ul><li>text.js 插件的规则</li><li>tpls 会照我们配置的信息来替换掉</li></ul></li><li>从第一个<code>{ }</code>开始就不能使用注释, 因为使用的是正则来搜索, 所以不能添加无用的代码, 也是会被搜索到的</li></ul></li><li><h3 id="template-js-支持AMD规范"><a href="#template-js-支持AMD规范" class="headerlink" title="template.js(支持AMD规范)"></a><code>template.js</code>(支持AMD规范)</h3><ul><li><code>template(&quot;script的id&quot;, 数据);</code><ul><li>模板必须要在页面中!</li></ul></li><li><code>template.render(&quot;模板字符串&quot;, 数据);</code><ul><li>异步加载, 性能会比较好</li></ul></li><li><code>template(&quot;模板路径&quot;, 数据);</code></li><li>{each result} {each} {$value.xxx} {@$value.xxx}<ul><li>对传递进来的数据里面的result属性值遍历</li></ul></li><li>{$index} 索引值</li></ul></li><li><h3 id="bootstrap"><a href="#bootstrap" class="headerlink" title="bootstrap"></a><code>bootstrap</code></h3><ul><li>路径导航就是面包屑</li></ul></li><li><h3 id="跨页面的数据传递"><a href="#跨页面的数据传递" class="headerlink" title="跨页面的数据传递"></a>跨页面的数据传递</h3><ul><li><code>localStorage</code><ul><li>只用用户没理由删除, 数据可以永久保存</li><li><code>setItem(); getItem();</code></li><li>只能保存字符串数据, 如果不是, 会被装换成字符串, 调用 <code>toString();</code></li><li>大小 50M</li></ul></li><li><code>sessionStorage</code><ul><li>当关闭浏览器的时候就会删除</li></ul></li><li>其他的一些方法<ul><li><code>clear():</code> 清空数据</li><li><code>key():</code> 获取键名?</li><li><code>remove():</code> 根据键名删除</li></ul></li><li><code>cookie</code><ul><li>大小只有 4k 左右</li><li>一般用来验证用户信息<br><img src="./cookie-loaclStorage-sessionStrorage.png" alt="三者的区别"></li></ul></li></ul></li><li><p><code>sesstion, local</code> 中保存的数据都是可以嵌套对象, 并且不能有函数, 直接回被过滤掉 (服务器的技术)</p></li><li><p><code>cookie</code> 王牌 <code>document.cookie = &quot;id=666&quot;;</code></p><ul><li>可以在前端读写, 也可以在后台读写</li><li>回话 <code>cookie</code></li><li>持久 <code>cookie</code><ul><li><code>document.cookie = &quot;id = 999; expires = &quot; + new Date(&quot;2017-08-20 00:00:00&quot;);</code> 差了8个小时</li></ul></li><li>不能跨域</li><li>不要保存安全性较高的数据, 比如密码</li><li>大概只有 4k 左右的容量</li></ul></li><li><p><code>jQuery.cookie</code> 插件</p><ul><li><code>$.cookei(&quot;name&quot;, &quot;xxx&quot;, { expires: .5 })</code> 这是的时间是一天为单位<ul><li><code>expires</code> 可以是数字类型, 也可以是 <code>Date</code> 对象</li><li>一个参数是获取, 两个是设置值</li><li><code>$.removeCookie()</code> 传入键来删除</li></ul></li></ul></li><li><p>隐藏域</p><ul><li><code>input type=&quot;hidden&quot;</code></li></ul></li><li><p>严格模式中</p><ul><li>不能使用 <code>callee caller</code></li><li>call 不能传递(慎用)</li></ul></li><li><p><code>callback &amp;&amp; callback()</code></p></li><li><p><code>&quot;post get&quot;.split(&quot; &quot;).forEach()</code></p></li><li><p><code>boostrap</code> 中是 <code>modal(&quot;hide&quot;)</code> 即隐藏, 也删除了</p></li><li><p>多些一些伪代码, 更好的阅读性!!!</p></li><li><p>联动下拉框 城市二级联动 的实现原理</p></li><li><p>插件利器</p><ul><li><code>uploadify</code>：上传插件 <code>http://www.uploadify.com/documentation/</code></li><li><code>ueditor</code>: 富文本编辑器 <code>http://ueditor.baidu.com/website/</code><blockquote><p>有一个 zIndex 的 bug</p></blockquote></li><li><code>ckeditor</code> : en</li><li><code>echarts</code>；<code>canvas</code>做出来图表软件 <code>http://echarts.baidu.com/</code></li></ul></li><li><p>BOM 常用操作</p><ul><li>属新当前页面<blockquote><p><code>location.reload();</code></p></blockquote></li><li>网站前进后退<blockquote><p><code>location.go(-1 || 1)</code></p></blockquote></li></ul></li></ul><h2 id="UEidtor"><a href="#UEidtor" class="headerlink" title="UEidtor"></a>UEidtor</h2><ul><li>常见的富文本编辑器<ul><li>ueditor</li><li>ckeditor</li></ul></li></ul><ul><li>使用ueditor<ul><li>导入ueditor.config.js</li><li>导入ueditor.all.js</li></ul></li></ul><ul><li><p>项目中使用</p><ul><li><p>在ueditor.config.js中修改ueditor文件夹路径：window.UEDITOR_HOME_URL = “/assets/ueditor/“;</p></li><li><p>在ueditor.config.js中修改zIndex属性，超过模态框的zindex(&gt;1050)</p></li><li><p>配置ueditor.config.js/ueditor.all.js的路径</p></li><li><p>通过shim解决2个js文件的依赖</p></li><li><p>在需要渲染编辑器的模块，导入指定的js</p></li><li><p>在需要渲染编辑器的页面模板中，添加一段代码</p><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"ueContainer"</span> <span class="attr">name</span>=<span class="string">"tc_introduce"</span> <span class="attr">type</span>=<span class="string">"text/plain"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure><p>​</p></li><li><p>当页面已经加载完毕之后，初始化编辑器：var ue=UE.getEditor(‘ueContainer’);</p></li><li><p>当编辑器初始化完毕后，加载原来的自我介绍</p><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ue.ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    ue.setContent(res.result.tc_introduce);</div><div class="line">&#125;)</div></pre></td></tr></table></figure></li></ul></li></ul>]]></content>
       
         <categories>
             
-            <category> code </category>
+            <category> note </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> code </tag>
+            <tag> jQuery </tag>
             
-            <tag> js </tag>
+            <tag> RequireJs </tag>
             
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[settimeout的使用]]></title>
-      <url>/2016/10/26/js-code/settimeout%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-      <content type="html"></content>
-      
-        <categories>
+            <tag> Boostrap </tag>
             
-            <category> code </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> code </tag>
-            
-            <tag> js </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[自定事件]]></title>
-      <url>/2016/09/03/js-code/%E8%87%AA%E5%AE%9A%E4%BA%8B%E4%BB%B6/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> code </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> code </tag>
-            
-            <tag> js </tag>
+            <tag> plugin </tag>
             
         </tags>
         
@@ -275,50 +143,6 @@
             <tag> code </tag>
             
             <tag> js </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[一些兼容问题]]></title>
-      <url>/2016/06/01/debug/%E4%B8%80%E4%BA%9B%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> debug </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> debug </tag>
-            
-            <tag> code </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[插件冲突]]></title>
-      <url>/2016/05/30/debug/%E6%8F%92%E4%BB%B6%E5%86%B2%E7%AA%81/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> other </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> debug </tag>
-            
-            <tag> plug-in </tag>
             
         </tags>
         
@@ -411,48 +235,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[npm 基本使用]]></title>
-      <url>/2016/02/25/software/npm-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</url>
-      <content type="html"><![CDATA[<h1 id="使用介绍"><a href="#使用介绍" class="headerlink" title="使用介绍"></a>使用介绍</h1><p>NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上的很多问题，常见的使用场景有以下几种：</p><ul><li>允许用户从NPM服务器下载别人编写的第三方包到本地使用。</li><li>允许用户从NPM服务器下载并安装别人编写的命令行程序到本地使用。</li><li>允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。</li></ul><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>npm 是随同 nodeJS 一起安装的包管理工具, 所以只要安装 nodejs 就可了.</p><p><a href="">nodeJS下载地址</a></p>]]></content>
-      
-        <categories>
-            
-            <category> software </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> software </tag>
-            
-            <tag> node </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[跨域请求]]></title>
-      <url>/2016/01/17/js-code/%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> other </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> network </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[http报文]]></title>
       <url>/2016/01/07/network/http%E6%8A%A5%E6%96%87/</url>
       <content type="html"><![CDATA[<h1 id="http-报文"><a href="#http-报文" class="headerlink" title="http 报文"></a><code>http</code> 报文</h1><h2 id="请求报文"><a href="#请求报文" class="headerlink" title="请求报文"></a>请求报文</h2><ul><li><h3 id="请求行"><a href="#请求行" class="headerlink" title="请求行"></a>请求行</h3><p>​ a. 请求方式: <code>get or post</code><br>​ b. 请求地址: <code>url</code></p></li><li><h3 id="请求头"><a href="#请求头" class="headerlink" title="请求头"></a>请求头</h3><p>a. 浏览器的一些信息<br>b. 浏览器想给服务器的一些方法</p></li><li><h3 id="请求主体"><a href="#请求主体" class="headerlink" title="请求主体"></a>请求主体</h3><p>a. 程序员想给服务器发型的内容</p></li></ul><h2 id="响应报文"><a href="#响应报文" class="headerlink" title="响应报文"></a>响应报文</h2><ul><li><h3 id="响应状态"><a href="#响应状态" class="headerlink" title="响应状态"></a>响应状态</h3><blockquote><p>常见的状态码:</p></blockquote><ul><li>200 OK, 请求成功</li><li>302 缓存</li><li>304 这就表明了客户端中所请求资源的缓存仍然是有效的</li><li>400 代表客户端发起的请求不符合服务器对请求的某些限制，或者请求本身存在一定的错误</li><li>404 页面不存在</li><li>500 0内部<a href="https://baike.baidu.com/item/%E6%9C%8D%E5%8A%A1%E5%99%A8" target="_blank" rel="external">服务器</a>（HTTP-Internal Server Error）错误说明IIS服务器无法解析ASP代码</li><li>…</li></ul></li><li><h3 id="响应头"><a href="#响应头" class="headerlink" title="响应头"></a>响应头</h3><ul><li>浏览器想给服务器发送的信息</li><li>浏览器的一些基本信息: 比如版本号</li></ul></li><li><h3 id="响应主体"><a href="#响应主体" class="headerlink" title="响应主体"></a>响应主体</h3><ul><li>响应返回的内容, 可以在页面直接显示</li></ul></li></ul><h2 id="get-和-post-的区别"><a href="#get-和-post-的区别" class="headerlink" title="get 和 post 的区别:"></a><code>get</code> 和 <code>post</code> 的区别:</h2><h3 id="不同点"><a href="#不同点" class="headerlink" title="不同点"></a>不同点</h3><ul><li><h4 id="get"><a href="#get" class="headerlink" title="get"></a><code>get</code></h4><ol><li>数据在url中</li><li>数据的大小受限于浏览器对url的限制<br>有些浏览器会限制url的长度, 理论是可以无止境的添加的<br>有些服务器也会闲着url的长度, 如果太长的话句会忽略超过的部分</li><li>所以一般较大的数据是用post来发送的</li></ol></li><li><h3 id="post"><a href="#post" class="headerlink" title="post"></a><code>post</code></h3><ol><li>数据没有在 <code>url</code> 中, 会比 <code>get</code> 方法安全一点</li><li>数据没有大小限制</li><li>服务器是可以限制 <code>post</code> 接受大小</li><li>如果要上传文件的话, 必须使用 <code>post</code><br>而且要添加 <code>enctype</code> 属性<br>这个方法只能传送单个文件<br>文件没有保存在 <code>$_POST</code> 中, 保存在 <code>$_FILES</code>;</li><li><code>send()</code> 没有发送数据的话, 也可以不用设置请求头</li></ol></li></ul><h3 id="相同点"><a href="#相同点" class="headerlink" title="相同点"></a>相同点</h3><ol><li><p>响应主体和请求主体的数据都是放在 <code>XMLHttpResquest</code> 的实例里的 <code>responseText</code> 属性里面</p></li><li><p>要上次文件的条件:<br>a. 使用 <code>post</code> 时候<br>b. 要添加属性 <code>enctype = &quot;...&quot;;</code></p></li><li><p>过程<br>a. 创建队形</p><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpResquest();</div></pre></td></tr></table></figure><p>b. 设置请求方式, 请求地址; 设置请求行</p><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">xhr.open(<span class="string">"get/post"</span>, <span class="string">"./xxx.php"</span>);</div><div class="line"><span class="comment">// @第三个参数: 代表是否异步, 默认值是异步应该</span></div><div class="line"><span class="comment">// 这里的地址就是表单里面的action属性值</span></div></pre></td></tr></table></figure><p>c. 设置请求主体</p><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">xhr.setRequsetHeader();</div><div class="line"><span class="comment">// 注意: 在使用 post 的时候要设置属性 "Content-Type" 的默认值</span></div><div class="line">    <span class="comment">// 在表单中, 提交的时候会默认设置一个值</span></div></pre></td></tr></table></figure><p>d. 发送</p><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">xhr.send(<span class="string">"this is post text"</span>);</div><div class="line"><span class="comment">// 在使用post的时候, 是在这里传送我们需要的数据</span></div></pre></td></tr></table></figure></li></ol><p>回调函数:</p><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 1. 标准写法, 有兼容问题</span></div><div class="line">xhr.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"hhhh"</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 2. 兼容写法</span></div><div class="line">xhr.onreadystatechange = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line"><span class="keyword">if</span> (xhr.status === <span class="number">200</span> &amp;&amp; xhr.readyState === <span class="number">4</span>) &#123;</div><div class="line">    <span class="built_in">console</span>.log(xhr.responseText);</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
@@ -466,29 +248,9 @@
         
         <tags>
             
-            <tag> note </tag>
-            
             <tag> notwork </tag>
             
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[HTML常见布局]]></title>
-      <url>/2015/11/11/HTML/HTML%E5%B8%B8%E8%A7%81%E5%B8%83%E5%B1%80/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> html </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> HTML </tag>
+            <tag> note </tag>
             
         </tags>
         

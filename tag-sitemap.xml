@@ -2,13 +2,6 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://www.pinghuazhuang.com/tags/node/</loc>
-        <lastmod>2017-09-02T17:25:46.361Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://www.pinghuazhuang.com/tags/RequireJs/</loc>
         <lastmod>2017-09-02T17:37:15.236Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -25,34 +18,6 @@
     <url>
         <loc>http://www.pinghuazhuang.com/tags/plugin/</loc>
         <lastmod>2017-09-02T17:37:15.236Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://www.pinghuazhuang.com/tags/network/</loc>
-        <lastmod>2017-09-02T17:47:47.981Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://www.pinghuazhuang.com/tags/CSS/</loc>
-        <lastmod>2017-09-02T17:55:55.785Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://www.pinghuazhuang.com/tags/C3H5/</loc>
-        <lastmod>2017-09-02T17:55:55.785Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://www.pinghuazhuang.com/tags/HTML/</loc>
-        <lastmod>2017-09-02T18:12:18.034Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -100,14 +65,14 @@
     </url>
 
     <url>
-        <loc>http://www.pinghuazhuang.com/tags/note/</loc>
+        <loc>http://www.pinghuazhuang.com/tags/notwork/</loc>
         <lastmod>2017-09-05T06:10:22.522Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://www.pinghuazhuang.com/tags/notwork/</loc>
+        <loc>http://www.pinghuazhuang.com/tags/note/</loc>
         <lastmod>2017-09-05T06:10:22.522Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
