@@ -16,9 +16,9 @@
         
         <tags>
             
-            <tag> HTML </tag>
-            
             <tag> C3H5 </tag>
+            
+            <tag> HTML </tag>
             
         </tags>
         
@@ -38,9 +38,9 @@
         
         <tags>
             
-            <tag> note </tag>
-            
             <tag> AngularJS </tag>
+            
+            <tag> note </tag>
             
         </tags>
         
@@ -60,9 +60,9 @@
         
         <tags>
             
-            <tag> note </tag>
-            
             <tag> AngularJS </tag>
+            
+            <tag> note </tag>
             
         </tags>
         
@@ -126,9 +126,9 @@
         
         <tags>
             
-            <tag> C3H5 </tag>
-            
             <tag> CSS </tag>
+            
+            <tag> C3H5 </tag>
             
         </tags>
         
@@ -136,7 +136,7 @@
     
     <entry>
       <title><![CDATA[xxx.com]]></title>
-      <url>/2017/02/11/note/xxx-com/</url>
+      <url>/2017/02/11/note/bxg-com/</url>
       <content type="html"><![CDATA[<h2 id="项目目录树"><a href="#项目目录树" class="headerlink" title="项目目录树"></a>项目目录树</h2><p>├─.vscode<br>├─assets<br>│ ├─bootstrap<br>│ │ ├─css<br>│ │ ├─fonts<br>│ │ └─js<br>│ │ └─locales<br>│ ├─ueditor<br>│ │ ├─dialogs<br>│ │ │ ├─anchor<br>│ │ │ ├─attachment<br>│ │ │ │ ├─fileTypeImages<br>│ │ │ │ └─images<br>│ │ │ ├─background<br>│ │ │ │ └─images<br>│ │ │ ├─charts<br>│ │ │ │ └─images<br>│ │ │ ├─emotion<br>│ │ │ │ └─images<br>│ │ │ ├─gmap<br>│ │ │ ├─help<br>│ │ │ ├─image<br>│ │ │ │ └─images<br>│ │ │ ├─insertframe<br>│ │ │ ├─link<br>│ │ │ ├─map<br>│ │ │ ├─music<br>│ │ │ ├─preview<br>│ │ │ ├─scrawl<br>│ │ │ │ └─images<br>│ │ │ ├─searchreplace<br>│ │ │ ├─snapscreen<br>│ │ │ ├─spechars<br>│ │ │ ├─table<br>│ │ │ ├─template<br>│ │ │ │ └─images<br>│ │ │ ├─video<br>│ │ │ │ └─images<br>│ │ │ ├─webapp<br>│ │ │ └─wordimage<br>│ │ ├─lang<br>│ │ │ ├─en<br>│ │ │ │ └─images<br>│ │ │ └─zh-cn<br>│ │ │ └─images<br>│ │ ├─php<br>│ │ ├─themes<br>│ │ │ └─default<br>│ │ │ ├─css<br>│ │ │ └─images<br>│ │ └─third-party<br>│ │ ├─codemirror<br>│ │ ├─highcharts<br>│ │ │ ├─adapters<br>│ │ │ ├─modules<br>│ │ │ └─themes<br>│ │ ├─snapscreen<br>│ │ ├─SyntaxHighlighter<br>│ │ ├─video-js<br>│ │ │ └─font<br>│ │ ├─webuploader<br>│ │ └─zeroclipboard<br>│ └─uploadify<br>│ └─__MACOSX<br>├─css<br>├─demo<br>├─imgs<br>├─js<br>│ ├─common<br>│ ├─course<br>│ ├─lib<br>│ ├─manage<br>│ └─teacher<br>└─tpls</p><h2 id="api-接口"><a href="#api-接口" class="headerlink" title="api 接口"></a>api 接口</h2><h2 id="模块划分"><a href="#模块划分" class="headerlink" title="模块划分"></a>模块划分</h2><ul><li><h3 id="讲师信息"><a href="#讲师信息" class="headerlink" title="讲师信息"></a>讲师信息</h3></li><li><h3 id="课程管理"><a href="#课程管理" class="headerlink" title="课程管理"></a>课程管理</h3></li><li><h3 id="课时管理"><a href="#课时管理" class="headerlink" title="课时管理"></a>课时管理</h3></li><li><h3 id="数据统计"><a href="#数据统计" class="headerlink" title="数据统计"></a>数据统计</h3></li></ul><blockquote><p>每个模块都大致包含了</p><pre><code>1. 添加
 2. 删除
 3. 修改
@@ -165,7 +165,7 @@
     
     <entry>
       <title><![CDATA[xxx.com]]></title>
-      <url>/2017/02/11/note/bxg-com/</url>
+      <url>/2017/02/11/note/xxx-com/</url>
       <content type="html"><![CDATA[<h2 id="项目目录树"><a href="#项目目录树" class="headerlink" title="项目目录树"></a>项目目录树</h2><p>├─.vscode<br>├─assets<br>│ ├─bootstrap<br>│ │ ├─css<br>│ │ ├─fonts<br>│ │ └─js<br>│ │ └─locales<br>│ ├─ueditor<br>│ │ ├─dialogs<br>│ │ │ ├─anchor<br>│ │ │ ├─attachment<br>│ │ │ │ ├─fileTypeImages<br>│ │ │ │ └─images<br>│ │ │ ├─background<br>│ │ │ │ └─images<br>│ │ │ ├─charts<br>│ │ │ │ └─images<br>│ │ │ ├─emotion<br>│ │ │ │ └─images<br>│ │ │ ├─gmap<br>│ │ │ ├─help<br>│ │ │ ├─image<br>│ │ │ │ └─images<br>│ │ │ ├─insertframe<br>│ │ │ ├─link<br>│ │ │ ├─map<br>│ │ │ ├─music<br>│ │ │ ├─preview<br>│ │ │ ├─scrawl<br>│ │ │ │ └─images<br>│ │ │ ├─searchreplace<br>│ │ │ ├─snapscreen<br>│ │ │ ├─spechars<br>│ │ │ ├─table<br>│ │ │ ├─template<br>│ │ │ │ └─images<br>│ │ │ ├─video<br>│ │ │ │ └─images<br>│ │ │ ├─webapp<br>│ │ │ └─wordimage<br>│ │ ├─lang<br>│ │ │ ├─en<br>│ │ │ │ └─images<br>│ │ │ └─zh-cn<br>│ │ │ └─images<br>│ │ ├─php<br>│ │ ├─themes<br>│ │ │ └─default<br>│ │ │ ├─css<br>│ │ │ └─images<br>│ │ └─third-party<br>│ │ ├─codemirror<br>│ │ ├─highcharts<br>│ │ │ ├─adapters<br>│ │ │ ├─modules<br>│ │ │ └─themes<br>│ │ ├─snapscreen<br>│ │ ├─SyntaxHighlighter<br>│ │ ├─video-js<br>│ │ │ └─font<br>│ │ ├─webuploader<br>│ │ └─zeroclipboard<br>│ └─uploadify<br>│ └─__MACOSX<br>├─css<br>├─demo<br>├─imgs<br>├─js<br>│ ├─common<br>│ ├─course<br>│ ├─lib<br>│ ├─manage<br>│ └─teacher<br>└─tpls</p><h2 id="api-接口"><a href="#api-接口" class="headerlink" title="api 接口"></a>api 接口</h2><h2 id="模块划分"><a href="#模块划分" class="headerlink" title="模块划分"></a>模块划分</h2><ul><li><h3 id="讲师信息"><a href="#讲师信息" class="headerlink" title="讲师信息"></a>讲师信息</h3></li><li><h3 id="课程管理"><a href="#课程管理" class="headerlink" title="课程管理"></a>课程管理</h3></li><li><h3 id="课时管理"><a href="#课时管理" class="headerlink" title="课时管理"></a>课时管理</h3></li><li><h3 id="数据统计"><a href="#数据统计" class="headerlink" title="数据统计"></a>数据统计</h3></li></ul><blockquote><p>每个模块都大致包含了</p><pre><code>1. 添加
 2. 删除
 3. 修改
@@ -294,18 +294,18 @@
         
         <tags>
             
-            <tag> code </tag>
-            
             <tag> debug </tag>
+            
+            <tag> code </tag>
             
         </tags>
         
     </entry>
     
     <entry>
-      <title><![CDATA[插件冲突及踩坑]]></title>
-      <url>/2016/05/30/debug/%E6%8F%92%E4%BB%B6%E5%86%B2%E7%AA%81%E5%8F%8A%E8%B8%A9%E5%9D%91/</url>
-      <content type="html"><![CDATA[<blockquote><p>不定时修改, 无序</p></blockquote><h1 id="echats"><a href="#echats" class="headerlink" title="echats"></a>echats</h1><p>制作地图并设置了移动和拖动的属性的时候, 加载是没有问题的.</p><p>但是, 删除容器再动态加载是会有问题的, 移动 和 拖动属性不能同时设置, 地图会乱跑的, 只能设置其中的一个属性!</p><h1 id="UE"><a href="#UE" class="headerlink" title="UE"></a>UE</h1><p>富文本编辑器</p><p>在于 <code>boostrap</code> 的模态框中使用的时候会有很多问题</p><ul><li><p>不能全屏</p><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* 修复 UE 编辑器无法全屏的 bug (跟 boostrap 的冲突) */</span></div><div class="line">$(<span class="string">"#edui3_body"</span>).on(<span class="string">"click"</span> ,<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="comment">/* dom.$modal 指的是模态框 */</span></div><div class="line"></div><div class="line">    <span class="comment">/* 非全屏时的样式 */</span></div><div class="line">    <span class="keyword">if</span> (<span class="string">"fixed"</span> == dom.$modal.css(<span class="string">"position"</span>)) &#123;</div><div class="line">        $(dom.ue.container).css(&#123;</div><div class="line">            top: <span class="number">0</span>,</div><div class="line">            left: <span class="number">0</span></div><div class="line">        &#125;);</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/* 全屏时的样式 */</span></div><div class="line">    dom.$modal.css(&#123;</div><div class="line">        position: <span class="string">"fixed"</span></div><div class="line">    &#125;);</div><div class="line"></div><div class="line">    <span class="comment">// 不明原因, 直接设置不生效</span></div><div class="line">    $(dom.ue.container).css(&#123;</div><div class="line">        position: <span class="string">"fixed"</span>,</div><div class="line">        top: <span class="number">0</span>,</div><div class="line">        left: <span class="number">0</span></div><div class="line">    &#125;);</div><div class="line"></div><div class="line">    <span class="comment">// 减去全屏的差值</span></div><div class="line">    <span class="keyword">var</span> s = $(dom.ue.container).position();</div><div class="line">    $(dom.ue.container).css(&#123;</div><div class="line">        top: -s.top,</div><div class="line">        left: -s.left</div><div class="line">    &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure><p>​</p></li><li><p>模态框显示隐藏的时候, UE 会消失, 且不能动态再次动态生成</p><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> ue = UE.getEditor(<span class="string">'ueContainer'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 在没有生成 ue 的时候调用自带的函数清除掉这个对象</span></div><div class="line"><span class="comment">// 比如在模态框隐藏的事件中来删除</span></div><div class="line">ue.destroy();</div></pre></td></tr></table></figure><p>​</p></li></ul><h1 id="uploadify"><a href="#uploadify" class="headerlink" title="uploadify"></a>uploadify</h1><p>要依赖于 <code>swf</code> 文件才能使用</p><p>在使用插件的时候有肯能会被浏览器的插件拦截导致报错, 影响使用</p><blockquote><p>请使用 h5 版本的 <code>uploadify</code> 或者关掉广告屏蔽插件</p></blockquote><p>================================================================================</p><h1 id="swiper"><a href="#swiper" class="headerlink" title="swiper"></a>swiper</h1><ul><li><code>swiper</code> 咱后面添加了2个元素, 如果使用 <code>nth</code> 的方式来设置样式的话户导致样式丢失</li></ul><blockquote><p>不能使用 nth 这种不能指定到具体元素的方式来设置样式</p></blockquote><ul><li><code>swiper</code> @4.0.0 beta2 是有问题的.</li></ul>]]></content>
+      <title><![CDATA[插件冲突]]></title>
+      <url>/2016/05/30/debug/%E6%8F%92%E4%BB%B6%E5%86%B2%E7%AA%81/</url>
+      <content type="html"></content>
       
         <categories>
             
@@ -325,9 +325,9 @@
     </entry>
     
     <entry>
-      <title><![CDATA[插件冲突]]></title>
-      <url>/2016/05/30/debug/%E6%8F%92%E4%BB%B6%E5%86%B2%E7%AA%81/</url>
-      <content type="html"></content>
+      <title><![CDATA[插件冲突及踩坑]]></title>
+      <url>/2016/05/30/debug/%E6%8F%92%E4%BB%B6%E5%86%B2%E7%AA%81%E5%8F%8A%E8%B8%A9%E5%9D%91/</url>
+      <content type="html"><![CDATA[<blockquote><p>不定时修改, 无序</p></blockquote><h1 id="echats"><a href="#echats" class="headerlink" title="echats"></a>echats</h1><p>制作地图并设置了移动和拖动的属性的时候, 加载是没有问题的.</p><p>但是, 删除容器再动态加载是会有问题的, 移动 和 拖动属性不能同时设置, 地图会乱跑的, 只能设置其中的一个属性!</p><h1 id="UE"><a href="#UE" class="headerlink" title="UE"></a>UE</h1><p>富文本编辑器</p><p>在于 <code>boostrap</code> 的模态框中使用的时候会有很多问题</p><ul><li><p>不能全屏</p><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* 修复 UE 编辑器无法全屏的 bug (跟 boostrap 的冲突) */</span></div><div class="line">$(<span class="string">"#edui3_body"</span>).on(<span class="string">"click"</span> ,<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="comment">/* dom.$modal 指的是模态框 */</span></div><div class="line"></div><div class="line">    <span class="comment">/* 非全屏时的样式 */</span></div><div class="line">    <span class="keyword">if</span> (<span class="string">"fixed"</span> == dom.$modal.css(<span class="string">"position"</span>)) &#123;</div><div class="line">        $(dom.ue.container).css(&#123;</div><div class="line">            top: <span class="number">0</span>,</div><div class="line">            left: <span class="number">0</span></div><div class="line">        &#125;);</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/* 全屏时的样式 */</span></div><div class="line">    dom.$modal.css(&#123;</div><div class="line">        position: <span class="string">"fixed"</span></div><div class="line">    &#125;);</div><div class="line"></div><div class="line">    <span class="comment">// 不明原因, 直接设置不生效</span></div><div class="line">    $(dom.ue.container).css(&#123;</div><div class="line">        position: <span class="string">"fixed"</span>,</div><div class="line">        top: <span class="number">0</span>,</div><div class="line">        left: <span class="number">0</span></div><div class="line">    &#125;);</div><div class="line"></div><div class="line">    <span class="comment">// 减去全屏的差值</span></div><div class="line">    <span class="keyword">var</span> s = $(dom.ue.container).position();</div><div class="line">    $(dom.ue.container).css(&#123;</div><div class="line">        top: -s.top,</div><div class="line">        left: -s.left</div><div class="line">    &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure><p>​</p></li><li><p>模态框显示隐藏的时候, UE 会消失, 且不能动态再次动态生成</p><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> ue = UE.getEditor(<span class="string">'ueContainer'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 在没有生成 ue 的时候调用自带的函数清除掉这个对象</span></div><div class="line"><span class="comment">// 比如在模态框隐藏的事件中来删除</span></div><div class="line">ue.destroy();</div></pre></td></tr></table></figure><p>​</p></li></ul><h1 id="uploadify"><a href="#uploadify" class="headerlink" title="uploadify"></a>uploadify</h1><p>要依赖于 <code>swf</code> 文件才能使用</p><p>在使用插件的时候有肯能会被浏览器的插件拦截导致报错, 影响使用</p><blockquote><p>请使用 h5 版本的 <code>uploadify</code> 或者关掉广告屏蔽插件</p></blockquote><p>================================================================================</p><h1 id="swiper"><a href="#swiper" class="headerlink" title="swiper"></a>swiper</h1><ul><li><code>swiper</code> 咱后面添加了2个元素, 如果使用 <code>nth</code> 的方式来设置样式的话户导致样式丢失</li></ul><blockquote><p>不能使用 nth 这种不能指定到具体元素的方式来设置样式</p></blockquote><ul><li><code>swiper</code> @4.0.0 beta2 是有问题的.</li></ul>]]></content>
       
         <categories>
             
@@ -466,9 +466,9 @@
         
         <tags>
             
-            <tag> notwork </tag>
-            
             <tag> note </tag>
+            
+            <tag> notwork </tag>
             
         </tags>
         
