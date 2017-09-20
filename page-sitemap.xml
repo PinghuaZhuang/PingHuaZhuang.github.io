@@ -21,14 +21,14 @@
     </url>
     
     <url>
-        <loc>http://www.pinghuazhuang.com/tags/</loc>
+        <loc>http://www.pinghuazhuang.com/archive/</loc>
         <lastmod>2017-08-08T16:37:22.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://www.pinghuazhuang.com/archive/</loc>
+        <loc>http://www.pinghuazhuang.com/tags/</loc>
         <lastmod>2017-08-08T16:37:22.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
