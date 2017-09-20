@@ -4,6 +4,72 @@
 
     
   <url>
+    <loc>http://www.pinghuazhuang.com/2017/04/20/ES6/es6%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</loc>
+    <lastmod>2017-09-20T01:16:38.985Z</lastmod>
+    <data>
+        <display>
+        <title>es6中this的指向</title>
+        <pubTime>2017-04-19T17:50:26.000Z</pubTime>
+        
+        <tag>es6</tag>
+         
+        <tag>js</tag>
+         
+         
+           
+             
+              <breadCrumb title="es6" url="http://www.pinghuazhuang.com/categories/es6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2016/06/01/other/ie8%E4%BB%A5%E4%B8%8A%E7%9A%84%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2017-09-19T17:49:15.375Z</lastmod>
+    <data>
+        <display>
+        <title>部分兼容问题</title>
+        <pubTime>2016-06-01T14:39:02.000Z</pubTime>
+        
+        <tag>code</tag>
+         
+        <tag>debug</tag>
+         
+         
+           
+             
+              <breadCrumb title="debug" url="http://www.pinghuazhuang.com/categories/debug/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2017/04/28/note/AngularJS/</loc>
+    <lastmod>2017-09-16T01:57:49.817Z</lastmod>
+    <data>
+        <display>
+        <title>AngularJS</title>
+        <pubTime>2017-04-28T05:14:02.000Z</pubTime>
+        
+        <tag>note</tag>
+         
+        <tag>AngularJS</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://www.pinghuazhuang.com/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.pinghuazhuang.com/2017/03/06/jQuery-code/jQuery-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/</loc>
     <lastmod>2017-09-07T14:14:04.364Z</lastmod>
     <data>
@@ -156,55 +222,7 @@
 
     
   <url>
-    <loc>http://www.pinghuazhuang.com/2017/04/28/note/AngularJS/</loc>
-    <lastmod>2017-09-03T08:13:45.012Z</lastmod>
-    <data>
-        <display>
-        <title>AngularJS</title>
-        <pubTime>2017-04-28T05:14:02.000Z</pubTime>
-        
-        <tag>note</tag>
-         
-        <tag>AngularJS</tag>
-         
-         
-           
-             
-              <breadCrumb title="note" url="http://www.pinghuazhuang.com/categories/note/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.pinghuazhuang.com/2017/02/11/note/xxx-com/</loc>
-    <lastmod>2017-09-02T17:37:15.236Z</lastmod>
-    <data>
-        <display>
-        <title>xxx.com</title>
-        <pubTime>2017-02-11T14:07:32.000Z</pubTime>
-        
-        <tag>jQuery</tag>
-         
-        <tag>RequireJs</tag>
-         
-        <tag>Boostrap</tag>
-         
-        <tag>plugin</tag>
-         
-         
-           
-             
-              <breadCrumb title="note" url="http://www.pinghuazhuang.com/categories/note/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.pinghuazhuang.com/2017/02/11/note/bxg-com/</loc>
     <lastmod>2017-09-02T17:37:15.236Z</lastmod>
     <data>
         <display>

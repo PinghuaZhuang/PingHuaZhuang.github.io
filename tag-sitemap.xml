@@ -23,13 +23,6 @@
     </url>
 
     <url>
-        <loc>http://www.pinghuazhuang.com/tags/AngularJS/</loc>
-        <lastmod>2017-09-03T08:14:24.345Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://www.pinghuazhuang.com/tags/bug/</loc>
         <lastmod>2017-09-03T08:38:40.945Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -37,22 +30,8 @@
     </url>
 
     <url>
-        <loc>http://www.pinghuazhuang.com/tags/debug/</loc>
-        <lastmod>2017-09-03T10:39:32.584Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://www.pinghuazhuang.com/tags/plug-in/</loc>
         <lastmod>2017-09-03T10:39:32.584Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://www.pinghuazhuang.com/tags/js/</loc>
-        <lastmod>2017-09-03T10:52:59.609Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -72,22 +51,50 @@
     </url>
 
     <url>
+        <loc>http://www.pinghuazhuang.com/tags/jQuery/</loc>
+        <lastmod>2017-09-07T14:14:04.364Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://www.pinghuazhuang.com/tags/note/</loc>
-        <lastmod>2017-09-05T06:10:22.522Z</lastmod>
+        <lastmod>2017-09-16T01:57:49.817Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://www.pinghuazhuang.com/tags/AngularJS/</loc>
+        <lastmod>2017-09-16T01:57:49.817Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://www.pinghuazhuang.com/tags/code/</loc>
-        <lastmod>2017-09-07T14:14:04.364Z</lastmod>
+        <lastmod>2017-09-19T17:49:15.375Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://www.pinghuazhuang.com/tags/jQuery/</loc>
-        <lastmod>2017-09-07T14:14:04.364Z</lastmod>
+        <loc>http://www.pinghuazhuang.com/tags/debug/</loc>
+        <lastmod>2017-09-19T17:49:15.375Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://www.pinghuazhuang.com/tags/es6/</loc>
+        <lastmod>2017-09-20T01:16:38.985Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://www.pinghuazhuang.com/tags/js/</loc>
+        <lastmod>2017-09-20T01:16:38.985Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
