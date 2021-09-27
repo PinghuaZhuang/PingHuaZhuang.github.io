@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2017/04/20/ES6/es6%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</loc>
+    <lastmod>2017-09-20T01:16:38.985Z</lastmod>
+    <data>
+        <display>
+        <title>es6中this的指向</title>
+        <pubTime>2017-04-19T17:50:26.000Z</pubTime>
+        
+        <tag>es6</tag>
+         
+        <tag>js</tag>
+         
+         
+           
+             
+              <breadCrumb title="es6" url="http://www.pinghuazhuang.com/categories/es6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2016/06/01/other/ie8%E4%BB%A5%E4%B8%8A%E7%9A%84%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2017-09-19T17:49:15.375Z</lastmod>
+    <data>
+        <display>
+        <title>部分兼容问题</title>
+        <pubTime>2016-06-01T14:39:02.000Z</pubTime>
+        
+        <tag>debug</tag>
+         
+        <tag>code</tag>
+         
+         
+           
+             
+              <breadCrumb title="debug" url="http://www.pinghuazhuang.com/categories/debug/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2017/04/28/note/AngularJS/</loc>
+    <lastmod>2017-09-16T01:57:49.817Z</lastmod>
+    <data>
+        <display>
+        <title>AngularJS</title>
+        <pubTime>2017-04-28T05:14:02.000Z</pubTime>
+        
+        <tag>AngularJS</tag>
+         
+        <tag>note</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://www.pinghuazhuang.com/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2017/03/06/jQuery-code/jQuery-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/</loc>
+    <lastmod>2017-09-07T14:14:04.364Z</lastmod>
+    <data>
+        <display>
+        <title>jQuery-整体架构</title>
+        <pubTime>2017-03-06T05:19:18.000Z</pubTime>
+        
+        <tag>code</tag>
+         
+        <tag>jQuery</tag>
+         
+         
+           
+             
+              <breadCrumb title="code-analyse" url="http://www.pinghuazhuang.com/categories/code-analyse/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2016/01/07/network/http%E6%8A%A5%E6%96%87/</loc>
+    <lastmod>2017-09-05T06:10:22.522Z</lastmod>
+    <data>
+        <display>
+        <title>http报文</title>
+        <pubTime>2016-01-07T06:07:59.000Z</pubTime>
+        
+        <tag>note</tag>
+         
+        <tag>notwork</tag>
+         
+         
+           
+             
+              <breadCrumb title="other" url="http://www.pinghuazhuang.com/categories/other/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2016/03/04/software/browser-sync/</loc>
+    <lastmod>2017-09-04T08:04:58.508Z</lastmod>
+    <data>
+        <display>
+        <title>browser-sync</title>
+        <pubTime>2016-03-04T07:30:46.000Z</pubTime>
+        
+        <tag>software</tag>
+         
+         
+           
+             
+              <breadCrumb title="software" url="http://www.pinghuazhuang.com/categories/software/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2016/08/31/js-code/1-400%E4%BA%BF%E4%B8%AD%E6%95%B0%E5%AD%971%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/</loc>
+    <lastmod>2017-09-03T10:52:59.609Z</lastmod>
+    <data>
+        <display>
+        <title>1-400亿中数字1出现的次数</title>
+        <pubTime>2016-08-31T14:30:07.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>code</tag>
+         
+         
+           
+             
+              <breadCrumb title="code" url="http://www.pinghuazhuang.com/categories/code/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2016/05/30/debug/%E6%8F%92%E4%BB%B6%E5%86%B2%E7%AA%81%E5%8F%8A%E8%B8%A9%E5%9D%91/</loc>
+    <lastmod>2017-09-03T10:39:32.584Z</lastmod>
+    <data>
+        <display>
+        <title>插件冲突及踩坑</title>
+        <pubTime>2016-05-30T14:27:27.000Z</pubTime>
+        
+        <tag>debug</tag>
+         
+        <tag>plug-in</tag>
+         
+         
+           
+             
+              <breadCrumb title="other" url="http://www.pinghuazhuang.com/categories/other/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2016/05/30/debug/debug/</loc>
+    <lastmod>2017-09-03T08:38:40.945Z</lastmod>
+    <data>
+        <display>
+        <title>debug</title>
+        <pubTime>2016-05-30T12:31:52.000Z</pubTime>
+        
+        <tag>code</tag>
+         
+        <tag>bug</tag>
+         
+         
+           
+             
+              <breadCrumb title="debug" url="http://www.pinghuazhuang.com/categories/debug/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2017/05/05/note/Angular-route/</loc>
+    <lastmod>2017-09-03T08:14:24.345Z</lastmod>
+    <data>
+        <display>
+        <title>Angular-route</title>
+        <pubTime>2017-05-04T17:39:51.000Z</pubTime>
+        
+        <tag>AngularJS</tag>
+         
+        <tag>note</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://www.pinghuazhuang.com/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2017/02/11/note/xxx-com/</loc>
+    <lastmod>2017-09-02T17:37:15.236Z</lastmod>
+    <data>
+        <display>
+        <title>xxx.com</title>
+        <pubTime>2017-02-11T14:07:32.000Z</pubTime>
+        
+        <tag>jQuery</tag>
+         
+        <tag>RequireJs</tag>
+         
+        <tag>Boostrap</tag>
+         
+        <tag>plugin</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://www.pinghuazhuang.com/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pinghuazhuang.com/2016/04/02/software/gulp%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/</loc>
+    <lastmod>2017-09-02T17:20:07.407Z</lastmod>
+    <data>
+        <display>
+        <title>gulp的简单实用</title>
+        <pubTime>2016-04-02T14:14:24.000Z</pubTime>
+        
+        <tag>code</tag>
+         
+        <tag>software</tag>
+         
+         
+           
+             
+              <breadCrumb title="software" url="http://www.pinghuazhuang.com/categories/software/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+</urlset>
