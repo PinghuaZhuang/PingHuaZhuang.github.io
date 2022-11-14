@@ -6,9 +6,6 @@ var getKey = function () {
 };
 
 var inject = function () {
-  console.log(
-    window.__CACHE_SCROLLTOP__ && window.__CACHE_SCROLLTOP__[getKey()],
-  );
   if (window.__CACHE_SCROLLTOP__ && window.__CACHE_SCROLLTOP__[getKey()]) {
     document.documentElement.scrollTop = window.__CACHE_SCROLLTOP__[getKey()];
   }
