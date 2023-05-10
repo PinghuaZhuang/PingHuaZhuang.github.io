@@ -164,6 +164,7 @@ var SnapLine = (function () {
             throw new Error("\u627E\u4E0D\u5230\u5BF9\u9F50\u7EBF");
         }
         if (elementsOrSelect == null) {
+            var dragRect_1 = dragNode.getBoundingClientRect();
             var showLines_1 = [];
             [
                 ['hb', 'ht'],
@@ -173,10 +174,9 @@ var SnapLine = (function () {
                 var config = checkConfigs[index];
                 group.forEach(function (o) {
                     var lineType = o;
-                    var dragRect = dragNode.getBoundingClientRect();
                     var condition = lineType.charAt(index > 1 ? 0 : 1) === config.comparison;
                     var direction = lineType.charAt(0);
-                    var originValue = config.getValue(dragRect, condition);
+                    var originValue = config.getValue(dragRect_1, condition);
                     var tokens = _this.searchNearly(originValue, _this.grid[direction]);
                     if (!tokens)
                         return dragNode.classList.remove("snap-active");
@@ -184,24 +184,27 @@ var SnapLine = (function () {
                     if (!tokens.length)
                         return dragNode.classList.remove("snap-active");
                     if (_this.option.onSnap) {
-                        _this.option.onSnap({
-                            snaps: tokens,
-                            direction: direction,
-                            lineType: lineType,
-                            target: dragNode,
-                            targetRect: dragRect,
-                        });
+                        setTimeout(function () {
+                            _this.option.onSnap({
+                                snaps: tokens,
+                                direction: direction,
+                                lineType: lineType,
+                                target: dragNode,
+                                targetRect: dragRect_1,
+                            });
+                        }, 1);
                     }
                     dragNode.classList.add("snap-active");
                     tokens.forEach(function (token) {
                         if (showLines_1.includes(lineType))
                             return;
                         var prop = config.getStyleProp(condition);
-                        var value = config.getStyleValue(dragRect, token, condition);
+                        var value = config.getStyleValue(dragRect_1, token, condition);
                         var line = _this.lines[lineType];
                         if (line == null)
                             return;
                         dragNode.style[prop] = "".concat(value, "px");
+                        dragRect_1 = dragNode.getBoundingClientRect();
                         line.target.style[prop] = "".concat(token.value, "px");
                         line.handle.show();
                         showLines_1.push(lineType);
