@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>SnapLine Demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"
+    />
 
     <style>
       .box {
@@ -92,13 +96,13 @@
         onSnap(params) {
           const { direction, targetRect } = params;
           const [mins, container] = snap.nearest(params);
-          mins.forEach(({ distance: min, token, config }, mini) => {
-            let guideLine = container.querySelector(`[data-type="${mini}"]`);
+          mins.forEach(({ distance: min, token, config }, minIndex) => {
+            let guideLine = container.querySelector(`[data-type="${minIndex}"]`);
             const prop = direction === 'h' ? 'width' : 'height';
             if (!guideLine) {
               guideLine = document.createElement('div');
               guideLine.classList.add('snap-line-guide');
-              guideLine.dataset.type = mini.toString();
+              guideLine.dataset.type = minIndex.toString();
               container.appendChild(guideLine);
             }
             if (min === Infinity) {
