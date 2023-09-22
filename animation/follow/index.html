@@ -1,36 +1,53 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Follow Animation</title>
-    <style>
-      #box1, #box2 {
-        width: 100px;
-        height: 100px;
-        background-color: gray;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 50%;
-      }
-      #box1 {
-        background-color: yellowgreen;
-        z-index: 100;
-      }
 
-      body {
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-      }
-    </style>
-    <script type="module" crossorigin src="./assets/index-be7c5cd4.js"></script>
-  </head>
-  <body>
-    <div id="box1"></div>
-    <div id="box2"></div>
-    
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+  <title>Follow Animation</title>
+  <style>
+    #box1,
+    #box2 {
+      width: 100px;
+      height: 100px;
+      background-color: gray;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+    }
+
+    #box1 {
+      background-color: yellowgreen;
+      z-index: 100;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+    }
+
+  </style>
+  <script>
+    document.documentElement.addEventListener(
+      "touchstart",
+      function (event) {
+        if (event.touches.length > 1) {
+          event.preventDefault();
+        }
+      },
+      false
+    );
+  </script>
+  <script type="module" crossorigin src="./assets/index-55c7f2f0.js"></script>
+</head>
+
+<body>
+  <div id="box1"></div>
+  <div id="box2"></div>
+  
+</body>
+
 </html>
