@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Range Example</title>
+  <style>
+    .hilight {
+      box-sizing: border-box;
+      border: 1px solid black;
+      background-color: red;
+      position: absolute;
+    }
+
+    .strong {
+      font-size: 20px;
+      color: #F56C6C;
+    }
+
+    .strong i {
+      color: initial;
+    }
+
+    #rects {
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+
+    nrmark {
+      background-color: #ffeb3b;
+      user-select: none;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1 align="center" tabindex="-1" id="user-content-konva" dir="auto">
+    <a class="heading-link" href="#konva">
+      Konva
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path
+          d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+        </path>
+      </svg>
+    </a>
+  </h1>
+  <p dir="auto">
+    Konva is an <span class="strong">HTML5</span> Canvas JavaScript framework that enables high
+    performance animations, transitions, node nesting, layering, filtering,
+    caching, event handling for desktop and mobile applications, and much
+    more.
+  </p>
+  <p dir="auto">
+    You can draw things onto the stage, add event listeners to them, move
+    them, scale them, and rotate them independently from other shapes to
+    support high performance animations, even if your application uses
+    thousands of shapes. Served hot with a side of awesomeness.
+  </p>
+  <p dir="auto">
+    This repository began as a <span class="strong">GitHub</span> fork of
+    <a href="https://github.com/ericdrowell/KineticJS">ericdrowell/KineticJS</a>.
+  </p>
+  <ul dir="auto">
+    <li>
+      <strong>Visit:</strong> The
+      <a href="http://konvajs.org/" rel="nofollow">Home Page</a> and follow on
+      <a href="https://twitter.com/lavrton" rel="nofollow">Twitter</a>
+    </li>
+    <li>
+      <strong>Discover:</strong>
+      <a href="http://konvajs.org/docs" rel="nofollow">Tutorials</a>,
+      <a href="http://konvajs.org/api" rel="nofollow">API Documentation</a>
+    </li>
+    <li>
+      <strong>Help:</strong>
+      <a href="http://stackoverflow.com/questions/tagged/konvajs" rel="nofollow">StackOverflow</a>,
+      <a href="https://discord.gg/8FqZwVT" rel="nofollow">Discord Chat</a>
+    </li>
+  </ul>
+
+  <div>
+    111
+    <span class="strong">222</span>
+    <span>333</span>
+    <span class="strong">
+      444
+      <i>555</i>
+      <i>666</i>
+      777
+    </span>
+  </div>
+
+  <script type="module" src="./index.js"></script>
+
+  <div id="rects"></div>
+
+  <script type="module">
+    import TextRange from './index.js';
+
+    document.addEventListener('mouseup', function (e) {
+      if (getSelection().isCollapsed) return;
+      var r = new TextRange();
+      console.log('creatTextRange:', r);
+      r.replace((textNode) => {
+        const nrmark = document.createElement('nrmark');
+        nrmark.appendChild(textNode);
+        return nrmark;
+      });
+    });
+  </script>
+</body>
+
+</html>
