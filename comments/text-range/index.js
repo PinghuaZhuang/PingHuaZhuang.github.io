@@ -68,23 +68,25 @@ function* nodeAfterIterator(node, isGoBack = false) {
  * 获取 Range 内的所有非空文本节点
  */
 function* nodeRangeIterator(range) {
-    const { startContainer, endContainer } = range;
+    const { startContainer, endContainer, startOffset, endOffset } = range;
+    const start = getRangeFrontierTextNode(startContainer, startOffset);
+    const end = getRangeFrontierTextNode(endContainer, endOffset);
     if (isSingle(range)) {
-        if (isPlainTextNode(startContainer)) {
-            yield startContainer;
+        if (isPlainTextNode(start)) {
+            yield start;
         }
         return;
     }
-    const iterator = nodeAfterIterator(startContainer);
-    let nextNode = iterator.next().value; // startContainer
-    while (nextNode && nextNode !== endContainer) {
+    const iterator = nodeAfterIterator(start);
+    let nextNode = iterator.next().value; // start
+    while (nextNode && nextNode !== end) {
         if (isPlainTextNode(nextNode)) {
             yield nextNode;
         }
         nextNode = iterator.next().value;
     }
     if (nextNode && isPlainTextNode(nextNode)) {
-        yield nextNode; // endContainer
+        yield nextNode; // end
     }
 }
 /**
@@ -104,8 +106,16 @@ function compareBoundaryRects(origin, target) {
     }
     return false;
 }
+/**
+ * 节点类型是 Text、Comment 或 CDATASection(xml)之一
+ * HTML中没有 CDATASection
+ */
+function getRangeFrontierTextNode(target, offset) {
+    return isTextNode(target) || target.nodeType === 8
+        ? target
+        : getRangeFrontierTextNode(target.childNodes[offset], 0);
+}
 
-let id = 0;
 class TextRange {
     constructor(options = {}) {
         var _a;
@@ -126,6 +136,7 @@ class TextRange {
         }
         this.range = _range;
         this.id = id !== null && id !== void 0 ? id : TextRange.generateId();
+        this.data = this.export();
         splitText && this.splitText();
         if (this.isEmpty) {
             console.warn(`ID: ${this.id}, No text selected.`);
@@ -192,29 +203,38 @@ class TextRange {
         }, rect);
         return mergeRects;
     }
-    get data() {
-        const { startContainer, endContainer, startOffset, endOffset } = this.range;
-        const { start, end } = getStartAndEndRangeText(this.range);
-        return {
-            id: this.id,
-            text: this.range.toString(),
-            start: {
-                path: TextRange.getPath(startContainer, this.root),
-                offset: startOffset,
-                text: start,
-            },
-            end: {
-                path: TextRange.getPath(endContainer, this.root),
-                offset: endOffset,
-                text: end,
-            },
-        };
-    }
     get isEmpty() {
         return this.range.collapsed;
     }
     /**
+     * 导出数据
+     */
+    export() {
+        if (this.split) {
+            throw new Error(`Exporting data must come before cropping.`);
+        }
+        const { startContainer, endContainer, startOffset, endOffset } = this.range;
+        const { start, end } = getStartAndEndRangeText(this.range);
+        const startTextNode = getRangeFrontierTextNode(startContainer, startOffset);
+        const endTextNode = getRangeFrontierTextNode(endContainer, endOffset);
+        return {
+            id: this.id,
+            // text: this.range.toString(),
+            start: {
+                path: TextRange.getPath(startTextNode, this.root),
+                offset: startContainer === startTextNode ? startOffset : 0,
+                text: start,
+            },
+            end: {
+                path: TextRange.getPath(endTextNode, this.root),
+                offset: endContainer === endTextNode ? endOffset : 0,
+                text: end,
+            },
+        };
+    }
+    /**
      * 替换文本节点
+     * 替换成新的节点后, range会发生变化
      */
     replace(render) {
         if (!this.options.splitText)
@@ -225,6 +245,8 @@ class TextRange {
             if (parentNode == null)
                 return;
             const newNode = render(o);
+            if (newNode == null)
+                return;
             if (nextSibling) {
                 parentNode.insertBefore(newNode, nextSibling);
             }
@@ -243,34 +265,29 @@ class TextRange {
             if (isTextNode(startContainer) && startOffset !== endOffset) {
                 isTextNode(endContainer) && endContainer.splitText(endOffset);
                 startContainer.splitText(startOffset);
-                startContainer.nextSibling && this.range.setStart(startContainer.nextSibling, 0);
+                startContainer.nextSibling &&
+                    this.range.setStart(startContainer.nextSibling, 0);
             }
             return;
         }
         if (isTextNode(startContainer)) {
             startContainer.splitText(startOffset);
-            console.log('startContainer.nextSibling', startContainer.nextSibling);
-            startContainer.nextSibling && this.range.setStart(startContainer.nextSibling, 0);
+            startContainer.nextSibling &&
+                this.range.setStart(startContainer.nextSibling, 0);
         }
         if (isTextNode(endContainer)) {
             endContainer.splitText(endOffset);
         }
     }
-    /**
-     * 包含改节点 && 改节点是文本节点
-     */
-    isValidTextNode(node) {
-        return (this.range.commonAncestorContainer.contains(node) && isPlainTextNode(node));
-    }
     static generateId() {
-        return id++;
+        return String(new Date().getTime());
     }
     /**
      * 根据配置创建 TextRange
      */
     static create(config, root) {
         const range = this.createRange(config, root);
-        return new TextRange({ id, range, container: root });
+        return new TextRange({ id: config.id, range, container: root });
     }
     /**
      * 根据配置创建 Range
@@ -287,7 +304,7 @@ class TextRange {
      * 获取指定节点的 path
      * 用户修改文本后尽可能不影响选中的位置
      */
-    static getPath(textNode, root) {
+    static getPath(textNode, root = document.body) {
         let parentElement = textNode.parentElement;
         const path = [
             0,
@@ -312,14 +329,14 @@ class TextRange {
             }
         }
         if (parentElement == null) {
-            throw new Error('The text node must be in the root container.');
+            throw new Error('The node must be within the root node.');
         }
         return path;
     }
     /**
      * 根据 path 获取指定节点
      */
-    static getNodeByPath(path, root) {
+    static getNodeByPath(path, root = document.body) {
         let node = root;
         path.reduce((_node, index, i) => {
             if (node == null)
@@ -328,6 +345,9 @@ class TextRange {
             const childs = isLast ? _node.childNodes : _node.children;
             if (childs[index]) {
                 node = childs[index];
+            }
+            else {
+                throw new Error('Path error, node not found.');
             }
             return node;
         }, node);

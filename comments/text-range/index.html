@@ -33,6 +33,10 @@
 
     nrmark {
       background-color: #ffeb3b;
+      /* user-select: none; */
+    }
+
+    button {
       user-select: none;
     }
 
@@ -84,6 +88,8 @@
     </li>
   </ul>
 
+  <!-- 这是注释节点 -->
+
   <div>
     111
     <span class="strong">222</span>
@@ -96,6 +102,11 @@
     </span>
   </div>
 
+  <div style="margin-top: 20px;">LocalStorage 存储:
+    <button id="import">导入</button>
+    <button id="export">导出</button>
+  </div>
+
   <script type="module" src="./index.js"></script>
 
   <div id="rects"></div>
@@ -103,14 +114,37 @@
   <script type="module">
     import TextRange from './index.js';
 
+    window.TextRange = TextRange;
+    const instances = [];
+    const hilight = (textNode) => {
+      if (!textNode.wholeText.trim()) return;
+      const nrmark = document.createElement('nrmark');
+      nrmark.appendChild(textNode);
+      return nrmark;
+    };
+
     document.addEventListener('mouseup', function (e) {
       if (getSelection().isCollapsed) return;
       var r = new TextRange();
       console.log('creatTextRange:', r);
-      r.replace((textNode) => {
-        const nrmark = document.createElement('nrmark');
-        nrmark.appendChild(textNode);
-        return nrmark;
+      instances.push(r.data);
+      r.replace(hilight);
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const exportBtn = document.querySelector('#export');
+      const importBtn = document.querySelector('#import');
+
+      exportBtn.addEventListener('click', () => {
+        localStorage.setItem('test', JSON.stringify(instances));
+      });
+      importBtn.addEventListener('click', () => {
+        const datas = JSON.parse(localStorage.getItem('test'));
+        datas.forEach((o) => {
+          const r = TextRange.create(o);
+          instances.push(r.data);
+          r.replace(hilight)
+        });
       });
     });
   </script>
