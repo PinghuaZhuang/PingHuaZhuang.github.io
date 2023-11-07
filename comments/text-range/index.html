@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Range Example</title>
+  <link rel="stylesheet" href="./semantic.min.css">
   <style>
     .hilight {
       box-sizing: border-box;
       border: 1px solid black;
-      background-color: red;
+      background-color: #f443363d;
       position: absolute;
     }
 
@@ -31,13 +32,20 @@
       top: 0;
     }
 
+    #table {
+      display: none;
+    }
+
     nrmark {
       background-color: #ffeb3b;
-      /* user-select: none; */
     }
 
     button {
       user-select: none;
+    }
+
+    body {
+      padding: 10px;
     }
 
   </style>
@@ -102,52 +110,40 @@
     </span>
   </div>
 
-  <div style="margin-top: 20px;">LocalStorage 存储:
-    <button id="import">导入</button>
-    <button id="export">导出</button>
-  </div>
+  <div class="ui divider"></div>
 
-  <script type="module" src="./index.js"></script>
+  <div>
+    <button id="hilight" class="ui button primary">高亮</button>
+    <button id="import" class="ui button" data-once>导入</button>
+    <button id="export" class="ui button" data-once>导出</button>
+    <button id="draw" class="ui button">绘制 rects</button>
+    <button id="drawMerge" class="ui button">绘制 mergeRects</button>
+    <button id="refresh" class="ui button">清空</button>
+  </div>
+  <ul class="ui list">
+    <li>替换节点(textRange.replace)实现高亮会导致节点更新.</li>
+    <li>⚠️对于静态页面, 导入的数据必须是节点未变化前的.</li>
+  </ul>
+
+  <div class="ui divider"></div>
+
+  <div>
+    <table id="table" class="ui celled table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>text-content</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
 
   <div id="rects"></div>
 
-  <script type="module">
-    import TextRange from './index.js';
-
-    window.TextRange = TextRange;
-    const instances = [];
-    const hilight = (textNode) => {
-      if (!textNode.wholeText.trim()) return;
-      const nrmark = document.createElement('nrmark');
-      nrmark.appendChild(textNode);
-      return nrmark;
-    };
-
-    document.addEventListener('mouseup', function (e) {
-      if (getSelection().isCollapsed) return;
-      var r = new TextRange();
-      console.log('creatTextRange:', r);
-      instances.push(r.data);
-      r.replace(hilight);
-    });
-
-    window.addEventListener('DOMContentLoaded', () => {
-      const exportBtn = document.querySelector('#export');
-      const importBtn = document.querySelector('#import');
-
-      exportBtn.addEventListener('click', () => {
-        localStorage.setItem('test', JSON.stringify(instances));
-      });
-      importBtn.addEventListener('click', () => {
-        const datas = JSON.parse(localStorage.getItem('test'));
-        datas.forEach((o) => {
-          const r = TextRange.create(o);
-          instances.push(r.data);
-          r.replace(hilight)
-        });
-      });
-    });
-  </script>
+  <script type="module" src="./lib.js"></script>
+  <script type="module" src="./index.js"></script>
 </body>
 
 </html>
