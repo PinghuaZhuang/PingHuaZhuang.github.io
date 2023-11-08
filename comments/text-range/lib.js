@@ -207,7 +207,7 @@ class TextRange {
             }
             mergeRects.push(cur);
             return cur;
-        }, rect);
+        });
         return mergeRects;
     }
     getStart() {

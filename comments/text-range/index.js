@@ -25,11 +25,10 @@ function createClickHandle(fn) {
 const rects = document.querySelector('#rects');
 const table = document.querySelector('#table');
 const tbody = document.querySelector('#table tbody');
-let instances = [];
-const hilightNodes = [];
 let hilightFlag = true;
 
 window.TextRange = TextRange;
+window.instances = [];
 
 function renderTable() {
   tbody.innerHTML = '';
@@ -44,32 +43,51 @@ function renderTable() {
 }
 
 const hilight = (textNode) => {
-  if (textNode.textContent == null || !textNode.textContent.trim() || !hilightFlag) return;
+  if (
+    textNode.textContent == null ||
+    !textNode.textContent.trim() ||
+    !hilightFlag
+  )
+    return;
   const nrmark = document.createElement('nrmark');
   nrmark.appendChild(textNode);
-  hilightNodes.push(nrmark);
   return nrmark;
 };
 
 const removeHilights = () => {
-  hilightNodes.forEach((o) => {
-    const { parentNode, nextSibling } = o;
-    if (parentNode == null) return;
-    const newNode = o.childNodes[0];
-    if (newNode == null) return;
-    if (nextSibling) {
-      parentNode.insertBefore(newNode, nextSibling);
-    } else {
-      parentNode.appendChild(newNode);
-    }
-    o.remove();
+  if (instances.every(r => r.textNodes().every(o => o.parentNode.nodeName !== 'NRMARK'))) return;
+  instances.forEach((r) => {
+    const tnodes = r.textNodes();
+    tnodes.forEach((o) => {
+      const nrmark = o.parentNode;
+      const { parentNode, nextSibling } = nrmark;
+      const newNode = new Text(o.wholeText);
+      if (parentNode == null) return;
+      if (
+        nrmark.nodeName === 'NRMARK' &&
+        Array.from(nrmark.childNodes).every((q) => q.nodeName !== 'NRMARK')
+      ) {
+        // const childNodes = Array.from(nrmark.childNodes);
+        if (nextSibling) {
+          parentNode.insertBefore(newNode, nextSibling);
+          // childNodes.forEach(q => parentNode.insertBefore(q, nextSibling));
+        } else {
+          parentNode.appendChild(newNode);
+          // childNodes.forEach(q => parentNode.appendChild(q));
+        }
+        nrmark.remove();
+      }
+    });
+    r.update();
   });
+  removeHilights();
 };
+window.removeHilights = removeHilights;
 
 const renderRects = function (textRange, isRect) {
   const key = isRect ? 'rects' : 'mergeRects';
   const domrects = textRange[key]();
-  console.log(`${key}:`, rects);
+  console.log(`${key}:`, domrects);
   domrects.forEach((rect) => {
     const div = document.createElement('div');
     div.style.width = `${rect.width}px`;
@@ -108,7 +126,6 @@ window.addEventListener('DOMContentLoaded', (e) => {
       } else {
         hilightFlag = false;
         removeHilights();
-        instances.forEach((o) => o.update());
       }
     }),
   );
