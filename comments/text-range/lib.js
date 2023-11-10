@@ -309,6 +309,46 @@ class TextRange {
             endContainer.splitText(endOffset);
         }
     }
+    /**
+     * 判断坐标是否在 Range 内.
+     */
+    isPointInRange(point, expand = 0) {
+        let expandX;
+        let expandY;
+        if (typeof expand === 'number') {
+            expandX = expandY = expand;
+        }
+        else {
+            [expandX, expandY] = expand;
+        }
+        const mergeRects = this.mergeRects();
+        let result = false;
+        mergeRects.forEach((rect) => {
+            if (rect.x - expandX > point.x || rect.y - expandY > point.y)
+                return;
+            if (rect.right + expandX < point.x || rect.bottom + expandY < point.y)
+                return;
+            result = true;
+        });
+        return result;
+    }
+    /**
+     * 判断 Range 是否在可视区域内
+     * @param {number} [threshold] 目标元素与视窗重叠的阈值（0~1）
+     */
+    isIntersecting(threshold) {
+        const { left, top, right, bottom, height, width } = this.rect();
+        // 数据有些小偏差, 所以这里最小距离 1px
+        const min = 1;
+        const minDistanceX = threshold == null ? min : Math.max(width * threshold, min);
+        const minDistanceY = threshold == null ? min : Math.max(height * threshold, min);
+        const { clientHeight, clientWidth } = document.body;
+        if (right < minDistanceX || left > clientWidth - minDistanceX)
+            return false;
+        if (bottom < minDistanceY || top > clientHeight - minDistanceY)
+            return false;
+        return true;
+    }
     static generateId() {
         return String(new Date().getTime());
     }
