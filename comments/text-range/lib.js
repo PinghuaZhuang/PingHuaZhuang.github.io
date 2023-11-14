@@ -101,9 +101,16 @@ function isSingle(range) {
     return startContainer === endContainer;
 }
 /**
- * 判断2个DOMRect是否水平方向相邻
+ * 判断2个DOMRect是否垂直允许合并
  */
-function compareBoundaryRects(left, right) {
+function isAdjacentV(left, right) {
+    // 由于line-height, 这里高度有一些误差
+    return left.width === right.width && Math.abs(left.bottom - right.top) < 1;
+}
+/**
+ * 判断2个DOMRect是否水平方向允许合并
+ */
+function isAdjacentH(left, right) {
     return left.right === right.left;
 }
 /**
@@ -116,6 +123,25 @@ function getRangeFrontierTextNode(target, offset) {
     return isTextNode(target) || isCommentNode(target)
         ? target
         : getRangeFrontierTextNode(target.childNodes[offset], 0);
+}
+function findRectIncludePoint(rects, point, expand = 0) {
+    let expandX;
+    let expandY;
+    if (typeof expand === 'number') {
+        expandX = expandY = expand;
+    }
+    else {
+        [expandX, expandY] = expand;
+    }
+    let result;
+    rects.forEach((rect) => {
+        if (rect.x - expandX > point.x || rect.y - expandY > point.y)
+            return;
+        if (rect.right + expandX < point.x || rect.bottom + expandY < point.y)
+            return;
+        result = rect;
+    });
+    return result;
 }
 
 class TextRange {
@@ -192,17 +218,21 @@ class TextRange {
     /**
      * 水平方向相邻的 DOMRect 合并
      */
-    mergeRects() {
+    mergeRects(v) {
         const rects = this.rects();
         if (!rects.length)
             return [];
         let rect = rects[0];
         const mergeRects = [rect];
         rects.reduce((pre, cur) => {
-            if (compareBoundaryRects(pre, cur)) {
+            if (isAdjacentH(pre, cur)) {
                 pre.width += cur.width;
                 pre.height = Math.max(pre.height, cur.height);
                 pre.y = Math.min(pre.y, cur.y);
+                return pre;
+            }
+            if (v && isAdjacentV(pre, cur)) {
+                pre.height += Math.floor(cur.height);
                 return pre;
             }
             mergeRects.push(cur);
@@ -313,24 +343,7 @@ class TextRange {
      * 判断坐标是否在 Range 内.
      */
     isPointInRange(point, expand = 0) {
-        let expandX;
-        let expandY;
-        if (typeof expand === 'number') {
-            expandX = expandY = expand;
-        }
-        else {
-            [expandX, expandY] = expand;
-        }
-        const mergeRects = this.mergeRects();
-        let result = false;
-        mergeRects.forEach((rect) => {
-            if (rect.x - expandX > point.x || rect.y - expandY > point.y)
-                return;
-            if (rect.right + expandX < point.x || rect.bottom + expandY < point.y)
-                return;
-            result = true;
-        });
-        return result;
+        return !!findRectIncludePoint(this.mergeRects(), point, expand);
     }
     /**
      * 判断 Range 是否在可视区域内
@@ -356,7 +369,7 @@ class TextRange {
      * 根据配置创建 TextRange
      */
     static create(config, root) {
-        const range = this.createRange(config, root);
+        const range = TextRange.createRange(config, root);
         return new TextRange({ id: config.id, range, container: root });
     }
     /**
