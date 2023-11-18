@@ -101,14 +101,14 @@ function isSingle(range) {
     return startContainer === endContainer;
 }
 /**
- * 判断2个DOMRect是否垂直允许合并
+ * 判断2个DOMRect垂直方向是否允许合并
  */
 function isAdjacentV(left, right) {
     // 由于line-height, 这里高度有一些误差
     return left.width === right.width && Math.abs(left.bottom - right.top) < 1;
 }
 /**
- * 判断2个DOMRect是否水平方向允许合并
+ * 判断2个DOMRect水平方向是否允许合并
  */
 function isAdjacentH(left, right) {
     return left.right === right.left;
@@ -176,6 +176,13 @@ class TextRange {
     get single() {
         return isSingle(this.range);
     }
+    get commonAncestorElement() {
+        const container = this.range.commonAncestorContainer;
+        return container instanceof Element ? container : container.parentElement;
+    }
+    get isEmpty() {
+        return this.range.collapsed;
+    }
     text() {
         return this.range.toString();
     }
@@ -187,9 +194,6 @@ class TextRange {
         textNodes.shift();
         textNodes.pop();
         return textNodes;
-    }
-    get isEmpty() {
-        return this.range.collapsed;
     }
     rect() {
         return this.range.getBoundingClientRect();
@@ -306,6 +310,42 @@ class TextRange {
             }
         });
         this.update();
+    }
+    /**
+     * 如果是相邻的文本节点则合并到新节点中
+     */
+    replaceNodes(render) {
+        if (!this.options.splitText)
+            this.splitText();
+        const textNodes = this.textNodes();
+        const cns = [[textNodes[0]]];
+        textNodes.reduce((pre, cur) => {
+            var _a, _b;
+            if (pre.nextSibling === cur && ((_a = cur.textContent) === null || _a === void 0 ? void 0 : _a.trim())) {
+                cns[cns.length - 1].push(cur);
+            }
+            else {
+                ((_b = cur.textContent) === null || _b === void 0 ? void 0 : _b.trim()) && cns.push([cur]);
+            }
+            return cur;
+        });
+        cns.forEach((nodes) => {
+            if (!nodes.length)
+                return;
+            const { parentNode, nextSibling } = nodes[nodes.length - 1];
+            if (parentNode == null)
+                return;
+            const newNode = render(nodes);
+            if (newNode == null)
+                return;
+            if (nextSibling) {
+                parentNode.insertBefore(newNode, nextSibling);
+            }
+            else {
+                parentNode.appendChild(newNode);
+            }
+            newNode.normalize();
+        });
     }
     /**
      * 更新 range
